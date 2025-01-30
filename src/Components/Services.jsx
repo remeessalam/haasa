@@ -1,0 +1,52 @@
+import React from "react";
+import { industries } from "../Constant";
+import servicebgimg from "../assets/image/servicebgimg.jpeg";
+const Services = () => {
+  return (
+    <div>
+      {" "}
+      <section className="wrapper">
+        <div className="text-center mb-12">
+          <span className="text-orange-500 font-medium mb-2 block">
+            Industry
+          </span>
+          <h2 className="text-[#1a237e] text-4xl md:text-5xl font-bold mb-4">
+            Industries We Serve
+          </h2>
+          <p className="text-gray-700 max-w-3xl mx-auto">
+            We cater to a wide range of industries, delivering tailored AI and
+            tech solutions to meet specific needs:
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {industries.map((industry, index) => (
+            <div
+              key={index}
+              className="relative rounded-3xl group p-8  transition-all duration-500 ease-in-out overflow-hidden"
+            >
+              {/* Background Image with Opacity Transition */}
+              <div
+                className="absolute top-0 left-0 w-full h-full bg-cover bg-center transition-opacity duration-500 ease-in-out opacity-0 group-hover:opacity-100"
+                style={{ backgroundImage: `url(${servicebgimg})` }}
+              ></div>
+
+              {/* White Overlay */}
+              <div className="absolute top-0 left-0 w-full h-full bg-pink-100 transition-opacity duration-500 ease-in-out group-hover:opacity-0"></div>
+
+              {/* Content */}
+              <div className="relative z-10 group-hover:text-white">
+                <h3 className="text-2xl font-bold mb-4 group-hover:text-white">
+                  {industry.title}
+                </h3>
+                <p>{industry.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Services;

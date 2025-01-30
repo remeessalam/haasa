@@ -7,6 +7,7 @@ module.exports = {
         primary: "#912092",
         secondary: "#3c238e",
         common: "#ff9400",
+        bannerBackground: "#100f1e",
       },
     },
   },
