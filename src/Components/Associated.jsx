@@ -65,7 +65,10 @@ const AssociatedWith = () => {
       </h2>
       <div ref={sliderRef} className="keen-slider mt-[3rem] ">
         {logos.map((img, index) => (
-          <div key={index} className="keen-slider__slide flex justify-center">
+          <div
+            key={index}
+            className="keen-slider__slide flex justify-center bg-gray-200 shadow-2xl mb-10 rounded-2xl"
+          >
             <img
               loading="lazy"
               src={img}

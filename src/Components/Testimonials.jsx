@@ -24,7 +24,7 @@ const Testimonials = () => {
   return (
     <div
       id="reviews"
-      className="min-h-[70vh] py-[5rem] w-full bg-cover bg-no-repeat bg-bottom flex items-center z-10"
+      className="min-h-[50vh]  w-full bg-cover bg-no-repeat bg-bottom flex items-center z-10"
       //   style={{ backgroundImage: `url(${testiImg})` }}
     >
       <div className="wrapper grid lg:grid-cols-2 gap-10 w-full">

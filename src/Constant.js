@@ -1,3 +1,15 @@
+import {
+  FaLightbulb,
+  FaStar,
+  FaHandshake,
+  FaUsers,
+  FaRocket,
+  FaSearch,
+  FaEdit,
+  FaCode,
+  FaCog,
+} from "react-icons/fa";
+
 export const routes = [
   { path: "/", name: "HOME" },
   { path: "/about-us", name: "ABOUT US" },
@@ -101,5 +113,77 @@ export const testimonials = [
     designation: "HR Director at HealthCare Innovators",
     review:
       "Our collaboration with AI Company on VR development has opened new doors for our training programs. Their VR simulations are incredibly realistic and have helped us provide more effective and engaging training sessions for our employees.",
+  },
+];
+
+export const values = [
+  {
+    icon: <FaLightbulb className="w-8 h-8" />,
+    title: "Innovation",
+    description:
+      "We stay at the forefront of technology and continuously seek new, more effective ways to address challenges.",
+  },
+  {
+    icon: <FaStar className="w-8 h-8" />,
+    title: "Quality",
+    description:
+      "We are committed to delivering the highest quality solutions that not only meet but exceed expectations.",
+  },
+  {
+    icon: <FaHandshake className="w-8 h-8" />,
+    title: "Integrity",
+    description:
+      "We conduct our business with honesty, respect, and transparency, building long-term relationships based on trust.",
+  },
+  {
+    icon: <FaUsers className="w-8 h-8" />,
+    title: "Collaboration",
+    description:
+      "We believe in working as a team with both our clients and our internal teams to deliver the best possible results.",
+  },
+  {
+    icon: <FaRocket className="w-8 h-8" />,
+    title: "Agility",
+    description:
+      "In a rapidly changing world, we are flexible and adaptable, ensuring that our solutions remain relevant and impactful.",
+  },
+];
+
+export const workProcess = [
+  {
+    icon: <FaSearch className="w-8 h-8" />,
+    title: "Discovery & Consultation",
+    description:
+      "We start by gaining a deep understanding of your business, challenges, and goals, ensuring we provide the most effective solution.",
+  },
+  {
+    icon: <FaEdit className="w-8 h-8" />,
+    title: "Planning & Strategy",
+    description:
+      "After understanding your needs, we develop a detailed strategy, including timelines, budgets, and deliverables.",
+  },
+  {
+    icon: <FaCode className="w-8 h-8" />,
+    title: "Design & Development",
+    description:
+      "We get to work on crafting a solution that meets your requirements, with regular feedback loops to ensure alignment with your vision.",
+  },
+  {
+    icon: <FaCog className="w-8 h-8" />,
+    title: "Testing & Quality Assurance",
+    description:
+      "Rigorous testing ensures your solution performs flawlessly across all scenarios.",
+  },
+  {
+    icon: <FaRocket className="w-8 h-8" />,
+    title: "Deployment",
+    description:
+      "We carefully launch your solution, ensuring a smooth transition and minimal disruption.",
+  },
+  {
+    icon: <FaHandshake className="w-8 h-8" />,
+    title: "Support & Maintenance",
+    description:
+      "Our commitment continues with ongoing support and maintenance to keep your solution running optimally.",
   },
 ];
