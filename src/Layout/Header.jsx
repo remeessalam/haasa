@@ -5,7 +5,7 @@ import { routes } from "../Constant";
 const Header = () => {
   const { pathname } = useLocation();
   return (
-    <header className="py-4 px-6 w-screen md:px-16 flex items-center justify-between">
+    <header className="fixed z-40 py-4 bg-white px-6 w-screen md:px-16 flex items-center justify-between">
       {/* Logo Section */}
       <div className="flex items-center">
         <img src={logo} alt="HAASA.AI-Logo" className="h-12" />
