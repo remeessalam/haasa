@@ -12,9 +12,7 @@ const LeadForm = () => {
       <div className="py-[5rem] z-10 ">
         <div className="grid wrapper md:grid-cols-2 items-center">
           <div className="">
-            <span className="text-orange-400 text-lg font-semibold">
-              Contact Us
-            </span>
+            <span className="section-name">Contact Us</span>
 
             <h2 className="text-white text-5xl font-bold mt-4 leading-tight">
               Please leave your Quires through a contact form. Our Industry

@@ -53,16 +53,11 @@ const AssociatedWith = () => {
   return (
     <div className="pt-[2rem] w-full flex flex-col items-center relative">
       <div className="blurred-blue right-[-10%] bottom-[-10%] -z-10"></div>
-      <h2
-        data-aos="fade-up"
-        className="text-[2rem] md:text-4xl font-semibold wrapper"
-      >
+      <h2 data-aos="fade-up" className="section-name wrapper">
         Associated With
       </h2>
 
-      <h2 className="sm:text-5xl font-extrabold text-secondary py-2">
-        Our Growth Enablers
-      </h2>
+      <h2 className="main-heading py-2">Our Growth Enablers</h2>
       <div ref={sliderRef} className="keen-slider mt-[3rem] ">
         {logos.map((img, index) => (
           <div

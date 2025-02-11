@@ -100,7 +100,7 @@ const AboutPage = () => {
           </div>
         </section>
       </div>
-      <OurValues />
+      <OurValues hideWorkProcess={false} />
       <Testimonials />
       <section className="bg-[#100f1e]">
         <div className="wrapper text-white py-[4rem] sm:py-[8rem]">

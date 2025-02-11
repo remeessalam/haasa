@@ -187,3 +187,91 @@ export const workProcess = [
       "Our commitment continues with ongoing support and maintenance to keep your solution running optimally.",
   },
 ];
+
+export const allServices = [
+  {
+    title: "Data Analytics & Business Intelligence",
+    description:
+      "Transform your data into actionable insights with HAASA AI's analytics and business intelligence solutions.",
+    bgColor: "bg-[#F8E7FF]",
+  },
+  {
+    title: "Artificial Intelligence (AI)",
+    description:
+      "Streamline operations and enhance decision-making with HAASA AI's customized AI solutions.",
+    bgColor: "bg-[#4527A0]",
+    textColor: "text-white",
+  },
+  {
+    title: "Mobile App Development (iOS & Android)",
+    description:
+      "Build engaging, high-performance mobile apps with HAASA AI for both iOS and Android platforms.",
+    bgColor: "bg-[#F8E7FF]",
+  },
+  {
+    title: "Application Development",
+    description:
+      "Develop reliable, secure, and custom applications tailored to your business needs with HAASA AI.",
+    bgColor: "bg-[#F8E7FF]",
+  },
+  {
+    title: "Cloud Computing Services",
+    description:
+      "Scale your business with our robust cloud computing solutions and expert management.",
+    bgColor: "bg-[#F8E7FF]",
+  },
+  {
+    title: "Cybersecurity Solutions",
+    description:
+      "Protect your digital assets with our comprehensive cybersecurity services and solutions.",
+    bgColor: "bg-[#F8E7FF]",
+  },
+  {
+    title: "IoT Solutions",
+    description:
+      "Connect and optimize your devices with our innovative IoT solutions and platforms.",
+    bgColor: "bg-[#F8E7FF]",
+  },
+  {
+    title: "Blockchain Development",
+    description:
+      "Implement secure and transparent blockchain solutions for your business processes.",
+    bgColor: "bg-[#F8E7FF]",
+  },
+  {
+    title: "DevOps Services",
+    description:
+      "Streamline your development and operations with our efficient DevOps practices.",
+    bgColor: "bg-[#F8E7FF]",
+  },
+  {
+    title: "Quality Assurance",
+    description:
+      "Ensure software reliability with our comprehensive testing and QA services.",
+    bgColor: "bg-[#F8E7FF]",
+  },
+  {
+    title: "UI/UX Design",
+    description:
+      "Create engaging user experiences with our professional UI/UX design services.",
+    bgColor: "bg-[#F8E7FF]",
+  },
+  {
+    title: "IT Consulting",
+    description:
+      "Get expert guidance for your technology initiatives and digital transformation.",
+    bgColor: "bg-[#F8E7FF]",
+  },
+  {
+    title: "Big Data Solutions",
+    description:
+      "Harness the power of big data with our advanced analytics and processing solutions.",
+    bgColor: "bg-[#F8E7FF]",
+  },
+  {
+    title: "Machine Learning",
+    description:
+      "Implement intelligent automation with our cutting-edge machine learning solutions.",
+    bgColor: "bg-[#F8E7FF]",
+  },
+];

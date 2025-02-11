@@ -7,12 +7,8 @@ const Services = () => {
       {" "}
       <section className="wrapper">
         <div className="text-center mb-12">
-          <span className="text-orange-500 font-medium mb-2 block">
-            Industry
-          </span>
-          <h2 className="text-[#1a237e] text-4xl md:text-5xl font-bold mb-4">
-            Industries We Serve
-          </h2>
+          <span className="section-name mb-2 block">Industry</span>
+          <h2 className="main-heading mb-4">Industries We Serve</h2>
           <p className="text-gray-700 max-w-3xl mx-auto">
             We cater to a wide range of industries, delivering tailored AI and
             tech solutions to meet specific needs:

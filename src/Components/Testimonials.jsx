@@ -33,11 +33,9 @@ const Testimonials = () => {
           className="flex flex-col items-center lg:items-start w-full"
         >
           <div className="flex items-center gap-3">
-            <h6 className="text-common text-xl font-bold ">Testimonials</h6>
+            <h6 className="section-name ">Testimonials</h6>
           </div>
-          <h2 className="sm:text-5xl font-extrabold text-secondary py-2">
-            Our client says
-          </h2>
+          <h2 className="main-heading py-2">Our client says</h2>
           <p className="text-gray-600 text-sm mb-5 max-w-[30rem] text-center lg:text-start">
             We cater to a wide range of industries, delivering tailored AI and
             tech solutions to meet specific needs:
