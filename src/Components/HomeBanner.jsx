@@ -16,7 +16,9 @@ const HomeBanner = () => {
           <div className="max-w-2xl">
             <div className="space-y-4">
               <p className="text-gray-300">Welcome to</p>
-              <h1 className="main-heading mb-4">Haasa Software Solutions</h1>
+              <h1 className="main-heading !text-white mb-4">
+                Haasa Software Solutions
+              </h1>
               <h2 className="text-2xl text-orange-400 mb-6">
                 Shaping the Future of Innovation
               </h2>
