@@ -46,7 +46,7 @@ const AboutCompany = () => {
         </div>
 
         {/* Right Section with Vision */}
-        <div className="space-y-6">
+        <div className="space-y-6 mt-16 sm:mt-0">
           <h2 className="text-4xl font-bold" data-aos="fade-left">
             Our Vision
           </h2>
