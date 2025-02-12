@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/image/logo/logo.png";
-import { routes, updatedServices } from "../Constant";
+import { clientDetails, routes, updatedServices } from "../Constant";
 import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
@@ -29,11 +29,11 @@ const Footer = () => {
               <div className="space-y-2">
                 <p className="flex items-center">
                   <span className="mr-2">✉</span>
-                  info@haasa.ai
+                  {clientDetails.email}
                 </p>
                 <p className="flex items-center">
                   <span className="mr-2">📞</span>
-                  +91-9866525099
+                  {clientDetails.phone}
                 </p>
               </div>
             </div>

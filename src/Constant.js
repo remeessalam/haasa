@@ -32,7 +32,8 @@ export const routes = [
   { path: "/services", name: "SERVICES" },
 ];
 export const clientDetails = {
-  email: "example@gmail.com",
+  email: "info@haasa.ai",
+  phone: "+91-9866525099",
 };
 export const industries = [
   {
