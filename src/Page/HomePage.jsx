@@ -14,7 +14,7 @@ import AboutCompany from "../Components/AboutCompany";
 
 const HomePage = () => {
   return (
-    <div className="text-black">
+    <div className="text-black max-w-screen overflow-x-hidden">
       <HomeBanner />
       <ServiceSlider />
       <Services />
@@ -29,15 +29,21 @@ const HomePage = () => {
             width="800"
             height="600"
             className="w-full h-[70vh] lg:block hidden object-cover z-10 grayscale-[20%]"
+            data-aos="fade-right"
           />
           <div
             data-aos="fade-left"
             className="px-6 flex flex-col items-center lg:items-start lg:pl-5 w-full z-10"
           >
             <div className="flex items-center gap-3 mb-5">
-              <h6 className="section-name">Work Experience</h6>
+              <h6 className="section-name" data-aos="fade-left">
+                Work Experience
+              </h6>
             </div>
-            <h2 className="text-[2rem] md:text-5xl font-extrabold capitalize text-center lg:text-start mb-12">
+            <h2
+              className="text-[2rem] md:text-5xl font-extrabold capitalize text-center lg:text-start mb-12"
+              data-aos="fade-left"
+            >
               We specialize in custom tailoring solutions
             </h2>
             <img
@@ -47,8 +53,12 @@ const HomePage = () => {
               height="300"
               alt="experience"
               className="w-full max-w-[21rem] rounded-t-lg block lg:hidden object-cover  object-right z-10"
+              data-aos="fade-left"
             />
-            <div className="z-10 bg-gradient-to-b from-primary to-violet-900 w-full p-5 grid md:grid-cols-3 gap-5 lg:w-[70vw] lg:-translate-x-[30vw]">
+            <div
+              className="z-10 bg-gradient-to-b from-primary to-violet-900 w-full p-5 grid md:grid-cols-3 gap-5 lg:w-[70vw] lg:-translate-x-[30vw]"
+              // data-aos="fade-left"
+            >
               <div className="flex flex-col gap-2 text-white items-start md:border-r-2 border-white/40 p-5">
                 <BsLightningChargeFill className="h-[4rem] w-[4rem] text-orange-400 obj2ct-c -mb-4ontain" />
                 <h2 className="text-4xl font-bold">50+</h2>

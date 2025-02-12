@@ -1,11 +1,17 @@
+import { useNavigate } from "react-router-dom";
 import aboutcompanyimage from "../assets/image/aboutcompanyimage.png";
 const AboutCompany = () => {
+  const navigate = useNavigate();
   return (
     <div className=" bg-white p-8">
       {/* Header Section */}
       <div className="text-center mb-12">
-        <h2 className="section-name mb-2">Our Story</h2>
-        <h1 className="main-heading">About Company</h1>
+        <h2 className="section-name mb-2" data-aos="fade-up">
+          Our Story
+        </h2>
+        <h1 className="main-heading" data-aos="fade-up">
+          About Company
+        </h1>
       </div>
 
       {/* Main Content Section */}
@@ -14,6 +20,7 @@ const AboutCompany = () => {
         <div className="relative">
           <div className="rounded-3xl overflow-hidden ">
             <img
+              data-aos="fade-right"
               src={aboutcompanyimage}
               alt="Business people silhouettes"
               className="w-full h-full object-cover"
@@ -21,7 +28,10 @@ const AboutCompany = () => {
           </div>
 
           {/* Experience Box */}
-          <div className="absolute -bottom-20 left-0 bg-primary text-white p-4 sm:p-8 rounded-3xl max-w-sm">
+          <div
+            className="absolute -bottom-20 left-0 bg-primary text-white p-4 sm:p-8 rounded-3xl max-w-sm"
+            data-aos="fade-up"
+          >
             <div className="mb-1 sm:mb-4">
               <span className="text-2xl sm:text-6xl font-bold">2</span>
               <span className="text-xl sm:text-4xl font-bold">+</span>
@@ -37,19 +47,28 @@ const AboutCompany = () => {
 
         {/* Right Section with Vision */}
         <div className="space-y-6">
-          <h2 className="text-4xl font-bold">Our Vision</h2>
-          <h3 className="text-[#6B21A8] text-3xl font-bold leading-tight">
+          <h2 className="text-4xl font-bold" data-aos="fade-left">
+            Our Vision
+          </h2>
+          <h3
+            className="text-[#6B21A8] text-3xl font-bold leading-tight"
+            data-aos="fade-left"
+          >
             Empowering Businesses to Adapt, Innovate, and Thrive Through
             Technology
           </h3>
-          <p className="text-gray-700 leading-relaxed">
+          <p className="text-gray-700 leading-relaxed" data-aos="fade-left">
             Our vision is to be the trusted partner that businesses turn to when
             they need to adapt, innovate, and excel. We believe that technology
             should not be a barrier but a catalyst for growth. Through our
             solutions, we aim to transform the way businesses operate, helping
             them stay competitive in an increasingly complex world.
           </p>
-          <button className="bg-[#FF9B3E] text-black px-8 py-3 rounded-lg font-medium hover:bg-opacity-90 transition-colors">
+          <button
+            className="bg-[#FF9B3E] text-black px-8 py-3 rounded-lg font-medium hover:bg-opacity-90 transition-colors"
+            data-aos="fade-left"
+            onClick={() => navigate("/about-us")}
+          >
             KNOW MORE ABOUT US
           </button>
         </div>

@@ -8,9 +8,13 @@ const OurValues = ({ hideWorkProcess }) => {
       <div className="wrapper py-16">
         {/* Values Section */}
         <div className="text-center mb-16">
-          <h2 className="section-name mb-2">What we give</h2>
-          <h1 className="main-heading mb-4">Our Values</h1>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <h2 className="section-name mb-2" data-aos="fade-up">
+            What we give
+          </h2>
+          <h1 className="main-heading mb-4" data-aos="fade-up">
+            Our Values
+          </h1>
+          <p className="text-gray-600 max-w-2xl mx-auto" data-aos="fade-up">
             We cater to a wide range of industries, delivering tailored AI and
             tech solutions to meet specific needs.
           </p>
@@ -18,7 +22,11 @@ const OurValues = ({ hideWorkProcess }) => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-24">
           {values.map((value, index) => (
-            <div key={index} className="bg-[#f3e5f5] rounded-lg p-6">
+            <div
+              key={index}
+              className="bg-[#f3e5f5] rounded-lg p-6"
+              data-aos="fade-up"
+            >
               <div className="text-purple-600 mb-4">{value.icon}</div>
               <h3 className="text-xl font-bold mb-2">{value.title}</h3>
               <p className="text-gray-700">{value.description}</p>
@@ -30,8 +38,12 @@ const OurValues = ({ hideWorkProcess }) => {
         {!hideWorkProcess && (
           <>
             <div className="text-center mb-16">
-              <h2 className="section-name mb-2">Work Process</h2>
-              <h1 className="main-heading">Our Work Process</h1>
+              <h2 className="section-name mb-2" data-aos="fade-up">
+                Work Process
+              </h2>
+              <h1 className="main-heading" data-aos="fade-up">
+                Our Work Process
+              </h1>
             </div>
 
             <div className="relative">
@@ -39,6 +51,7 @@ const OurValues = ({ hideWorkProcess }) => {
                 {workProcess.map((process, index) => (
                   <div
                     key={index}
+                    data-aos="fade-up"
                     className="flex-none border rounded-xl overflow-hidden w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] snap-start"
                   >
                     <div className="bg-white rounded-lg px-6 py-10 shadow-lg relative h-full">

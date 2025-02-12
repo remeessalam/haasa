@@ -57,7 +57,9 @@ const AssociatedWith = () => {
         Associated With
       </h2>
 
-      <h2 className="main-heading py-2">Our Growth Enablers</h2>
+      <h2 className="main-heading py-2" data-aos="fade-up">
+        Our Growth Enablers
+      </h2>
       <div ref={sliderRef} className="keen-slider mt-[3rem] ">
         {logos.map((img, index) => (
           <div

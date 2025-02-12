@@ -1,4 +1,4 @@
-import React from "react";
+import { Link as Scroll } from "react-scroll";
 
 const Intro = () => {
   return (
@@ -19,7 +19,14 @@ const Intro = () => {
             </p>
             <div className="w-full flex md:justify-end md:mt-0 mt-5 sm:mt-10">
               <button className="primary-btn px-10 py-4 h-fit self-end">
-                Talk to us
+                <Scroll
+                  aria-label="Home"
+                  smooth={true}
+                  to="contactus"
+                  className="cursor-pointer"
+                >
+                  Talk to us
+                </Scroll>
               </button>
             </div>
           </div>

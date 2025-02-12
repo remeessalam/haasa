@@ -1,7 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/image/logo/logo.png";
+import { routes, updatedServices } from "../Constant";
+import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
+  const { pathname } = useLocation();
+
   return (
     <footer className="bg-[#1E1535] text-white pt-12">
       <div className="container mx-auto px-4">
@@ -36,27 +40,14 @@ const Footer = () => {
           </div>
 
           {/* Services */}
-          <div>
+          <div className="w-full md:col-span-2">
             <h2 className="text-2xl font-bold mb-4">Services</h2>
-            <ul className="space-y-2">
-              <li>Data Analytics</li>
-              <li>AI and ML</li>
-              <li>Cloud Development</li>
-              <li>Blockchain Development</li>
-              <li>AR/VR Development</li>
-              <li>IOT Development</li>
-            </ul>
-          </div>
-
-          {/* Development Services */}
-          <div>
-            <ul className="space-y-2 mt-12">
-              <li>Application Development</li>
-              <li>Mobile Apps Development</li>
-              <li>Chatbot Development</li>
-              <li>UI/UX Development</li>
-              <li>Website Development</li>
-              <li>Game Development</li>
+            <ul className="grid md:grid-cols-2 space-y-2 gap-4">
+              {updatedServices.map((obj) => (
+                <li key={obj.title}>
+                  <Link to={`/service/${obj.path}`}>{obj.title}</Link>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -64,25 +55,36 @@ const Footer = () => {
           <div>
             <h2 className="text-2xl font-bold mb-4">Quick Links</h2>
             <ul className="space-y-2 mb-8">
-              <li className="text-[#CDFF00]">About Us</li>
-              <li>Latest Updates</li>
-              <li>Contact Us</li>
+              {routes.map((obj) => (
+                <li key={obj.name}>
+                  <Link
+                    to={obj.path}
+                    className={`${
+                      pathname === `${obj.path}`
+                        ? `text-secondary font-medium`
+                        : `text-gray-100`
+                    }  hover:text-purple-700`}
+                  >
+                    {obj.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
 
             <div>
               <h2 className="text-2xl font-bold mb-4">Connect with</h2>
-              <div className="flex space-x-4">
-                <Link to="#" className="hover:text-gray-300">
-                  <i className="fab fa-facebook-f"></i>
+              <div className="flex space-x-4 text-white">
+                <Link to="#" className="hover:text-gray-300 text-lg">
+                  <FaFacebookF />
                 </Link>
-                <Link to="#" className="hover:text-gray-300">
-                  <i className="fab fa-instagram"></i>
+                <Link to="#" className="hover:text-gray-300 text-lg">
+                  <FaInstagram />
                 </Link>
-                <Link to="#" className="hover:text-gray-300">
-                  <i className="fab fa-twitter"></i>
+                <Link to="#" className="hover:text-gray-300 text-lg">
+                  <FaTwitter />
                 </Link>
-                <Link to="#" className="hover:text-gray-300">
-                  <i className="fab fa-youtube"></i>
+                <Link to="#" className="hover:text-gray-300 text-lg">
+                  <FaYoutube />
                 </Link>
               </div>
             </div>

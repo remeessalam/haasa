@@ -3,13 +3,17 @@ import { industries } from "../Constant";
 import servicebgimg from "../assets/image/servicebgimg.jpeg";
 const Services = () => {
   return (
-    <div className="mt-[3rem]">
+    <div className="">
       {" "}
       <section className="wrapper">
         <div className="text-center mb-12">
-          <span className="section-name mb-2 block">Industry</span>
-          <h2 className="main-heading mb-4">Industries We Serve</h2>
-          <p className="text-gray-700 max-w-3xl mx-auto">
+          <span className="section-name mb-2 block" data-aos="fade-up">
+            Industry
+          </span>
+          <h2 className="main-heading mb-4" data-aos="fade-up">
+            Industries We Serve
+          </h2>
+          <p className="text-gray-700 max-w-3xl mx-auto" data-aos="fade-up">
             We cater to a wide range of industries, delivering tailored AI and
             tech solutions to meet specific needs:
           </p>
@@ -19,6 +23,7 @@ const Services = () => {
           {industries.map((industry, index) => (
             <div
               key={index}
+              data-aos="fade-up"
               className="relative rounded-3xl group p-8  transition-all duration-500 ease-in-out overflow-hidden"
             >
               {/* Background Image with Opacity Transition */}
