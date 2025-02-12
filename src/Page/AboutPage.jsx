@@ -21,10 +21,13 @@ const AboutPage = () => {
         <div className="wrapper py-12 relative">
           <div className="grid md:grid-cols-2 gap-8 ">
             <div className="">
-              <h1 className="text-[#1a237e] text-5xl font-bold mb-8">
+              <h1
+                className="text-[#1a237e] text-5xl font-bold mb-8"
+                data-aos="fade-right"
+              >
                 Know About Us
               </h1>
-              <p className="text-gray-800 mb-6">
+              <p className="text-gray-800 mb-6" data-aos="fade-right">
                 At HAASA AI, we don't just deliver technology solutions — we
                 become an integral part of your journey toward success. Our
                 mission is simple: to help businesses thrive in a rapidly
@@ -33,7 +36,7 @@ const AboutPage = () => {
                 solve problems, we're committed to enabling businesses of all
                 sizes to unlock their full potential.
               </p>
-              <p className="text-gray-800">
+              <p className="text-gray-800" data-aos="fade-right">
                 We understand that the digital landscape can be overwhelming.
                 That's why we work hand-in-hand with you to understand your
                 unique challenges and goals. Through collaboration, creativity,
@@ -43,7 +46,7 @@ const AboutPage = () => {
                 of the way. give a heading for this also
               </p>
             </div>
-            <div className="">
+            <div className="" data-aos="fade-left">
               <img src={aboutusimage} alt="Technology Circuit" className="" />
             </div>
           </div>
@@ -52,6 +55,7 @@ const AboutPage = () => {
         {/* Work Experience Section */}
         <section className="w-full grid lg:grid-cols-[60%_35%] items-end relative">
           <img
+            data-aos="fade-right"
             loading="lazy"
             src={workexperienceimage}
             alt="experience"
@@ -104,8 +108,11 @@ const AboutPage = () => {
       <Testimonials />
       <section className="bg-[#100f1e]">
         <div className="wrapper text-white py-[4rem] sm:py-[8rem]">
-          <h1 className="text-3xl sm:text-7xl font-bold"> who we are</h1>
-          <p className="text-[#ffffff] mt-5">
+          <h1 className="text-3xl sm:text-7xl font-bold" data-aos="fade-up">
+            {" "}
+            who we are
+          </h1>
+          <p className="text-[#ffffff] mt-5" data-aos="fade-up">
             At HAASA AI, we are more than just a service provider – we are your
             trusted technology partner. Our expert team is committed to
             delivering innovative, customized solutions that address your unique
