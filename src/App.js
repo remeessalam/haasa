@@ -13,6 +13,7 @@ import { Suspense } from "react";
 import { LoadingSpinner } from "./Components/LoaderSpinner";
 import LandingLayout from "./LandingLayout/LandingLayout";
 import LandingPage from "./Page/LandingPage";
+import Thankyou from "./Components/Thankyou";
 function App() {
   AOS.init({
     once: true,
@@ -42,6 +43,7 @@ function App() {
               <Route path="/about-us" element={<AboutPage />} />
               <Route path="/services" element={<ServicePage />} />
               <Route path="/service/:path" element={<ServiceDetailsPage />} />
+              <Route path="/thank-you" element={<Thankyou />} />
             </Route>
           </Routes>
           <Routes>
