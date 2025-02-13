@@ -28,7 +28,17 @@ const LandingHeader = () => {
         {routes.map((obj) => (
           <>
             {obj.name === "HOME" ? (
-              <Link></Link>
+              <Link
+                key={obj.name}
+                to={obj.path}
+                className={`${
+                  pathname === `${obj.path}`
+                    ? `text-secondary font-medium`
+                    : `text-gray-700`
+                }  hover:text-purple-700`}
+              >
+                {obj.name}
+              </Link>
             ) : (
               <Scroll
                 key={obj.name}
@@ -77,18 +87,34 @@ const LandingHeader = () => {
       {isMobileMenuOpen && (
         <div className="absolute top-16 left-0 w-full bg-white shadow-md py-4 flex flex-col items-center space-y-4 md:hidden">
           {routes.map((obj) => (
-            <Scroll
-              key={obj.name}
-              aria-label="Home"
-              smooth={true}
-              to={obj.landingpath}
-              className="cursor-pointer"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              {obj.name}
-            </Scroll>
+            <>
+              {obj.name === "HOME" ? (
+                <Link
+                  key={obj.name}
+                  to={obj.path}
+                  className={`${
+                    pathname === `${obj.path}`
+                      ? `text-secondary font-medium`
+                      : `text-gray-700`
+                  }  hover:text-purple-700`}
+                >
+                  {obj.name}
+                </Link>
+              ) : (
+                <Scroll
+                  key={obj.name}
+                  aria-label="Home"
+                  smooth={true}
+                  offset={-70}
+                  to={obj.landingpath}
+                  className="cursor-pointer"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  {obj.name}
+                </Scroll>
+              )}
+            </>
           ))}
-
           {/* Social Media Icons */}
           <div className="flex items-center space-x-4">
             <Link to="#" className="text-secondary hover:text-blue-700">

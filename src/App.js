@@ -11,6 +11,8 @@ import { Toaster } from "react-hot-toast";
 import ServiceDetailsPage from "./Page/ServiceDetailsPage";
 import { Suspense } from "react";
 import { LoadingSpinner } from "./Components/LoaderSpinner";
+import LandingLayout from "./LandingLayout/LandingLayout";
+import LandingPage from "./Page/LandingPage";
 function App() {
   AOS.init({
     once: true,
@@ -40,6 +42,18 @@ function App() {
               <Route path="/about-us" element={<AboutPage />} />
               <Route path="/services" element={<ServicePage />} />
               <Route path="/service/:path" element={<ServiceDetailsPage />} />
+            </Route>
+          </Routes>
+          <Routes>
+            <Route element={<LandingLayout />}>
+              <Route
+                path="/web-development"
+                element={<LandingPage page="web-development" />}
+              />
+              <Route
+                path="/app-development"
+                element={<LandingPage page="app-development" />}
+              />
             </Route>
           </Routes>
         </div>

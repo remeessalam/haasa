@@ -25,11 +25,38 @@ import {
   FaCommentDots,
   FaPhoneAlt,
 } from "react-icons/fa";
+import {
+  FaShoppingCart,
+  FaFileAlt,
+  FaApple,
+  FaAndroid,
+  FaLayerGroup,
+} from "react-icons/fa";
+// porfolio image
+// Import all images at the top (Web Development)
+import FiveGHomesImg from "./assets/web-development-portfolio/5ghomes.png";
+import BayutImg from "./assets/web-development-portfolio/bayut.png";
+import ColdCreekcapImg from "./assets/web-development-portfolio/cold creekcap.png";
+import EmergencyMusicImg from "./assets/web-development-portfolio/emergency music .png";
+import FlatiornImg from "./assets/web-development-portfolio/flatiorn.png";
+import MavenImg from "./assets/web-development-portfolio/maven.png";
+import MenissaCateringsImg from "./assets/web-development-portfolio/menissa caterings.png";
+import MethodistImg from "./assets/web-development-portfolio/methodist.png";
+import ThinkRealityImg from "./assets/web-development-portfolio/think reality.png";
+// Import all images at the top (App Development)
+import DubaiTravelGuideImg from "./assets/app-development-portfolio/dubai travel guide.png";
+import EloraHairPalourImg from "./assets/app-development-portfolio/elora hair palour.png";
+import EvansFrancisImg from "./assets/app-development-portfolio/evans francis.png";
+import HouseOfDeliverenceImg from "./assets/app-development-portfolio/house of deliverence.png";
+import MybitsShopImg from "./assets/app-development-portfolio/mybitsshop.png";
+import NamazImg from "./assets/app-development-portfolio/namaz.png";
+import PoteaImg from "./assets/app-development-portfolio/potea.png";
+import RentopBikeAndCarImg from "./assets/app-development-portfolio/rentop bike and car.png";
 
 export const routes = [
   { path: "/", name: "HOME" },
-  { path: "/about-us", name: "ABOUT US" },
-  { path: "/services", name: "SERVICES" },
+  { path: "/about-us", name: "ABOUT US", landingpath: "aboutus" },
+  { path: "/services", name: "SERVICES", landingpath: "services" },
 ];
 export const clientDetails = {
   email: "info@haasa.ai",
@@ -204,94 +231,6 @@ export const workProcess = [
     title: "Support & Maintenance",
     description:
       "Our commitment continues with ongoing support and maintenance to keep your solution running optimally.",
-  },
-];
-
-export const allServices = [
-  {
-    title: "Data Analytics & Business Intelligence",
-    description:
-      "Transform your data into actionable insights with HAASA AI's analytics and business intelligence solutions.",
-    bgColor: "bg-[#F8E7FF]",
-  },
-  {
-    title: "Artificial Intelligence (AI)",
-    description:
-      "Streamline operations and enhance decision-making with HAASA AI's customized AI solutions.",
-    bgColor: "bg-[#4527A0]",
-    textColor: "text-white",
-  },
-  {
-    title: "Mobile App Development (iOS & Android)",
-    description:
-      "Build engaging, high-performance mobile apps with HAASA AI for both iOS and Android platforms.",
-    bgColor: "bg-[#F8E7FF]",
-  },
-  {
-    title: "Application Development",
-    description:
-      "Develop reliable, secure, and custom applications tailored to your business needs with HAASA AI.",
-    bgColor: "bg-[#F8E7FF]",
-  },
-  {
-    title: "Cloud Computing Services",
-    description:
-      "Scale your business with our robust cloud computing solutions and expert management.",
-    bgColor: "bg-[#F8E7FF]",
-  },
-  {
-    title: "Cybersecurity Solutions",
-    description:
-      "Protect your digital assets with our comprehensive cybersecurity services and solutions.",
-    bgColor: "bg-[#F8E7FF]",
-  },
-  {
-    title: "IoT Solutions",
-    description:
-      "Connect and optimize your devices with our innovative IoT solutions and platforms.",
-    bgColor: "bg-[#F8E7FF]",
-  },
-  {
-    title: "Blockchain Development",
-    description:
-      "Implement secure and transparent blockchain solutions for your business processes.",
-    bgColor: "bg-[#F8E7FF]",
-  },
-  {
-    title: "DevOps Services",
-    description:
-      "Streamline your development and operations with our efficient DevOps practices.",
-    bgColor: "bg-[#F8E7FF]",
-  },
-  {
-    title: "Quality Assurance",
-    description:
-      "Ensure software reliability with our comprehensive testing and QA services.",
-    bgColor: "bg-[#F8E7FF]",
-  },
-  {
-    title: "UI/UX Design",
-    description:
-      "Create engaging user experiences with our professional UI/UX design services.",
-    bgColor: "bg-[#F8E7FF]",
-  },
-  {
-    title: "IT Consulting",
-    description:
-      "Get expert guidance for your technology initiatives and digital transformation.",
-    bgColor: "bg-[#F8E7FF]",
-  },
-  {
-    title: "Big Data Solutions",
-    description:
-      "Harness the power of big data with our advanced analytics and processing solutions.",
-    bgColor: "bg-[#F8E7FF]",
-  },
-  {
-    title: "Machine Learning",
-    description:
-      "Implement intelligent automation with our cutting-edge machine learning solutions.",
-    bgColor: "bg-[#F8E7FF]",
   },
 ];
 
@@ -523,5 +462,175 @@ export const updatedServices = [
     ],
     outcome:
       "Our AI calling services help businesses reduce operational costs while improving the quality and responsiveness of customer interactions.",
+  },
+];
+
+export const hassaWebServices = [
+  {
+    id: 1,
+    title: "E-commerce Websites",
+    icon: <FaShoppingCart className="text-6xl text-primary" />,
+    description:
+      "Empowering your online business with tailored e-commerce solutions. Our platforms boost customer engagement, streamline operations, and drive revenue growth.",
+  },
+  {
+    id: 2,
+    title: "Social Media Websites",
+    icon: <FaUsers className="text-6xl text-primary" />,
+    description:
+      "Get custom social media websites that captivate and engage your audience, driving growth and brand loyalty effortlessly.",
+  },
+  {
+    id: 3,
+    title: "Landing Websites",
+    icon: <FaFileAlt className="text-6xl text-primary" />,
+    description:
+      "Creating high-converting landing pages that capture attention and drive action. Tailored designs that showcase your brand’s message and maximize conversions.",
+  },
+  {
+    id: 4,
+    title: "Custom Websites",
+    icon: <FaCode className="text-6xl text-primary" />,
+    description:
+      "Delivering tailor-made websites designed to meet your unique business needs. Our solutions blend creativity and functionality for an exceptional online experience.",
+  },
+];
+
+export const hassaAppServices = [
+  {
+    id: 1,
+    title: "iOS App Development",
+    icon: <FaApple className="text-6xl text-primary" />,
+    description:
+      "Our skilled developers work with both Swift and Objective-C to build robust and efficient apps. We optimize your app for performance, speed, and responsiveness.",
+  },
+  {
+    id: 2,
+    title: "Android App Development",
+    icon: <FaAndroid className="text-6xl text-primary" />,
+    description:
+      "We design and develop tailor-made Android apps that align with your vision and business goals. Proficient in both Java and Kotlin, we build robust and efficient apps.",
+  },
+  {
+    id: 3,
+    title: "Flutter App Development",
+    icon: <FaMobileAlt className="text-6xl text-primary" />,
+    description:
+      "Flutter allows you to build apps for both iOS and Android using a single codebase. While Flutter's default web app architecture presents challenges, we can overcome them with smart strategies.",
+  },
+  {
+    id: 4,
+    title: "Hybrid App Development",
+    icon: <FaLayerGroup className="text-6xl text-primary" />,
+    description:
+      "We build feature-rich hybrid apps tailored to your business needs. We create mobile-friendly apps that work seamlessly across iOS and Android devices.",
+  },
+];
+
+export const webPortfolio = [
+  {
+    id: 1,
+    img: FiveGHomesImg,
+    title: "5g Homes",
+    link: "https://5ghighspeedinternet.co",
+  },
+  {
+    id: 2,
+    img: BayutImg,
+    title: "Bayut",
+    link: "https://www.bayut.com",
+  },
+  {
+    id: 3,
+    img: ColdCreekcapImg,
+    title: "Cold Creekcap",
+    link: "https://www.coldcreekcap.com",
+  },
+  {
+    id: 4,
+    img: EmergencyMusicImg,
+    title: "Emergency Music",
+    link: "https://www.figma.com/proto/GwlIMQuIuFevhOEp8moALy/emergence-music-distribuBon?page-id=6298%3A7215&type=design&node-id=6298-7776&viewport=407%2C314%2C0.11&t=QCtz7M4USn6gI1CG-1&scaling=min-zoom",
+  },
+  {
+    id: 5,
+    img: FlatiornImg,
+    title: "Flatiorn",
+    link: "",
+  },
+  {
+    id: 6,
+    img: MavenImg,
+    title: "Maven",
+    link: "",
+  },
+  {
+    id: 7,
+    img: MenissaCateringsImg,
+    title: "Menissa Caterings",
+    link: "https://messinascatering.com",
+  },
+  {
+    id: 8,
+    img: MethodistImg,
+    title: "Methodist",
+    link: "",
+  },
+  {
+    id: 9,
+    img: ThinkRealityImg,
+    title: "Think Reality",
+    link: "https://thinkrealty.ae",
+  },
+];
+
+export const appPortfolio = [
+  {
+    id: 1,
+    img: DubaiTravelGuideImg,
+    title: "Dubai Travel Guide",
+    link: "https://play.google.com/store/apps/details?id=com.eBps.dubai.travel.guide&pcampaignid=web_share",
+  },
+  {
+    id: 2,
+    img: EloraHairPalourImg,
+    title: "Elora Hair Palour",
+    link: "https://play.google.com/store/apps/details?id=app.barbera.io&pcampaignid=web_share",
+  },
+  {
+    id: 3,
+    img: EvansFrancisImg,
+    title: "Evans Francis",
+    link: "https://play.google.com/store/apps/details?id=com.chrisBanappdevelopers.evansfrancis&pcampaignid=web_share",
+  },
+  {
+    id: 4,
+    img: HouseOfDeliverenceImg,
+    title: "House of Deliverence",
+    link: "https://play.google.com/store/apps/details?id=com.chrisBanappdevelopers.hod&pcampaignid=web_share",
+  },
+  {
+    id: 5,
+    img: MybitsShopImg,
+    title: "Mybits Shop",
+    link: "https://play.google.com/store/apps/details?id=com.klikomics.android&pcampaignid=web_share",
+  },
+  {
+    id: 6,
+    img: NamazImg,
+    title: "Namaz",
+    link: "https://play.google.com/store/apps/details?id=com.iccbrossard.prayerBmes&pcampaignid=web_share",
+  },
+  {
+    id: 7,
+    img: PoteaImg,
+    title: "Potea",
+    link: "https://play.google.com/store/apps/details?id=com.Zigna.AutoSnap&pcampaignid=web_share",
+  },
+  {
+    id: 8,
+    img: RentopBikeAndCarImg,
+    title: "Rentop Bike and Car",
+    link: "https://play.google.com/store/apps/details?id=com.rentop&pcampaignid=web_share",
   },
 ];
