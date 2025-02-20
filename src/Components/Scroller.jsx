@@ -33,17 +33,23 @@ export default function Scroller() {
                     ${
                       section.id === selected
                         ? "bg-[#ffa726]"
-                        : "bg-[#4b4373] group-hover:bg-[#4b4373]"
+                        : "bg-white group-hover:bg-[#4b4373] border  border-secondary"
                     }`}
               >
                 <div
                   className={`absolute border-r border-2 transition-all duration-300 ${
                     section.id === selected
-                      ? `border-gray-600`
-                      : `border-[#3b3363]`
+                      ? `border-secondary`
+                      : `border-secondary/40`
                   } h-[5rem] -z-[1]`}
                 />
-                <span className="text-white font-medium">{section.id}</span>
+                <span
+                  className={`${
+                    section.id === selected ? `text-white` : `text-secondary`
+                  } font-bold group-hover:text-white`}
+                >
+                  {section.id}
+                </span>
               </div>
               {section.id === selected && (
                 <span className="ml-3 text-[#ffa726] whitespace-nowrap text-wrap max-w-14">

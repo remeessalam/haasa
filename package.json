@@ -3,10 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fontsource/montserrat-alternates": "^5.1.1",
     "aos": "^2.3.4",
     "cra-template": "1.2.0",
     "gsap": "^3.12.7",
+    "install": "^0.13.0",
     "keen-slider": "^6.8.6",
+    "npm": "^11.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-hook-form": "^7.54.2",

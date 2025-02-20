@@ -240,7 +240,7 @@ export const updatedServices = [
     path: "data-analytics-and-business-intelligence",
     icon: <FaChartLine className="text-white text-3xl" />,
     description:
-      "In today’s competitive business landscape, data is a key asset that can unlock untapped opportunities. Data Analytics & Business Intelligence (BI) services help companies extract actionable insights from complex data sets, transforming raw data into valuable business intelligence.",
+      "Transform your data into actionable insights with HAASA AI's analytics and business intelligence solutions.",
     detailedDescription: `Our experts assist in designing robust data strategies that not only organize but also analyze and visualize data for enhanced decision-making. We integrate cutting-edge BI tools, ensuring your company can extract real-time insights and predictive analytics, ultimately giving you the power to anticipate market shifts and improve operational efficiency.
 `,
     services: [
@@ -257,7 +257,7 @@ export const updatedServices = [
     path: "artificial-intelligence-ai",
     icon: <FaRobot className="text-white text-3xl" />,
     description:
-      "Artificial Intelligence is transforming industries by automating tasks, analyzing large data sets, and making intelligent decisions. Our AI Services help organizations integrate the latest AI technologies to enhance business operations and customer experiences.",
+      "Streamline operations and enhance decision-making with HAASA AI's customized AI solutions.",
     detailedDescription: `We leverage AI to solve complex business problems, from customer service automation to intelligent product recommendations. Our solutions focus on making processes smarter and more efficient by enabling machines to learn and adapt from data.`,
     services: [
       "Machine Learning: Tailoring custom algorithms that allow systems to improve from experience.",
@@ -273,7 +273,7 @@ export const updatedServices = [
     path: "mobile-app-development-ios-android",
     icon: <FaMobileAlt className="text-white text-3xl" />,
     description:
-      "In a mobile-first world, providing seamless, fast, and functional apps is critical. Our Mobile App Development services focus on delivering high-performance applications for iOS and Android devices, designed to enhance user engagement and drive business success.",
+      "Build engaging, high-performance mobile apps with HAASA AI for both iOS and Android platforms.",
     detailedDescription: `We work closely with you to develop apps that are not only intuitive and engaging but also feature robust back-end support to ensure scalability and performance. Whether you're looking for native or cross-platform apps, we have the expertise to deliver top-tier solutions.`,
     services: [
       "Custom iOS & Android Apps: Tailored solutions to suit your unique business needs, from concept to deployment.",
@@ -289,7 +289,7 @@ export const updatedServices = [
     path: "application-development",
     icon: <FaLaptopCode className="text-white text-3xl" />,
     description:
-      "Custom Application Development allows businesses to build solutions that are perfectly suited to their internal processes and customer needs. Our approach is tailored to create applications that are scalable, secure, and seamlessly integrate with your existing systems.",
+      "Develop reliable, secure, and scalable custom applications tailored to your business needs with HAASA AI.",
     detailedDescription: `We take time to understand your challenges, objectives, and audience, crafting applications that help streamline operations, reduce costs, and improve productivity. Our agile development process ensures we can quickly adapt and refine solutions as your business needs evolve.
 `,
     services: [

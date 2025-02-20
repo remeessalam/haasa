@@ -47,20 +47,24 @@ const ServiceSlider = () => {
               <div
                 key={index}
                 data-aos="fade-up"
-                className={`justify-between  hover:bg-secondary/80 hover:text-white bg-primary/50 rounded-3xl p-8 w-[300px] flex flex-col gap-4 hover:-translate-y-2 transition-all duration-300`}
+                className={`group  hover:bg-secondary/80 hover:text-white bg-primary/50 rounded-3xl p-8 w-[300px] flex flex-col gap-4 hover:-translate-y-2 transition-all duration-300`}
               >
                 <div className="bg-black rounded-full w-16 h-16 flex items-center justify-center">
                   {/* <BiBarChartAlt2 className="text-white text-3xl" /> */}
                   <div className="service-icon">{service.icon}</div>
                 </div>
-                <h3 className={`text-xl font-bold `}>{service.title}</h3>
-                <p className={` text-sm`}>{service.description}</p>
-                <button
-                  onClick={() => handleReadMore(service)}
-                  className={`text-sm font-semibold mt-2 `}
-                >
-                  READ MORE
-                </button>
+                <div>
+                  <h3 className={`text-xl font-bold `}>{service.title}</h3>
+                  <p className={`font-montserrat text-sm`}>
+                    {service.description}
+                  </p>
+                  <button
+                    onClick={() => handleReadMore(service)}
+                    className={`group-hover:text-[#C5D82E] text-sm font-semibold mt-2 text-start`}
+                  >
+                    READ MORE
+                  </button>
+                </div>
               </div>
             ))}
           </div>
