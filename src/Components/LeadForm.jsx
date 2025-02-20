@@ -59,23 +59,25 @@ const LeadForm = () => {
       <div className="absolute  w-full h-full bg-black/70" />
       {/* Content */}
       <div className="py-[5rem] z-10 ">
-        <div className="grid wrapper md:grid-cols-2 items-center">
+        <div className="grid wrapper md:grid-cols-2 justify-items-center items-center gap-10">
           <div className="">
-            <h1 className="section-name" data-aos="fade-right">
+            <h1 className="section-name !font-extrabold" data-aos="fade-right">
               Contact Us
             </h1>
 
             <h2
-              className="text-white text-5xl font-bold mt-4 leading-tight"
+              className="text-white text-5xl font-bold mt-4 leading-tight font-candal"
               data-aos="fade-right"
             >
-              Please leave your Quires through a contact form. Our Industry
-              experts will contact you
+              Please leave your <br />
+              Quires through a <br />
+              contact form. Our <br />
+              Industry experts will <br /> contact you
             </h2>
           </div>
 
-          <div className="mt-8" data-aos="fade-left">
-            <h1 className="text-white text-3xl font-bold mb-8">
+          <div className="mt-8 max-w-md" data-aos="fade-left">
+            <h1 className="text-white text-3xl font-bold mb-8 ">
               GET IN TOUCH WITH US
             </h1>
             <p className="text-white mb-8">
@@ -83,7 +85,7 @@ const LeadForm = () => {
               presence
             </p>
 
-            <form className="space-y-6 z-20" onSubmit={handleSubmit(onSubmit)}>
+            <form className="space-y-6 z-20 " onSubmit={handleSubmit(onSubmit)}>
               <div>
                 <label className="text-white text-sm mb-2 block">Name</label>
                 <input

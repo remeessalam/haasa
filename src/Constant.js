@@ -52,7 +52,12 @@ import MybitsShopImg from "./assets/app-development-portfolio/mybitsshop.png";
 import NamazImg from "./assets/app-development-portfolio/namaz.png";
 import PoteaImg from "./assets/app-development-portfolio/potea.png";
 import RentopBikeAndCarImg from "./assets/app-development-portfolio/rentop bike and car.png";
-
+//values icons
+import innovation from "./assets/svgs/innovation.svg";
+import quality from "./assets/svgs/quality.svg";
+import integrity from "./assets/svgs/integrity.svg";
+import collaboration from "./assets/svgs/collaboration.svg";
+import agility from "./assets/svgs/agility.svg";
 export const routes = [
   { path: "/", name: "HOME" },
   { path: "/about-us", name: "ABOUT US", landingpath: "aboutus" },
@@ -164,31 +169,31 @@ export const testimonials = [
 
 export const values = [
   {
-    icon: <FaLightbulb className="w-8 h-8" />,
+    icon: innovation,
     title: "Innovation",
     description:
       "We stay at the forefront of technology and continuously seek new, more effective ways to address challenges.",
   },
   {
-    icon: <FaStar className="w-8 h-8" />,
+    icon: quality,
     title: "Quality",
     description:
       "We are committed to delivering the highest quality solutions that not only meet but exceed expectations.",
   },
   {
-    icon: <FaHandshake className="w-8 h-8" />,
+    icon: integrity,
     title: "Integrity",
     description:
       "We conduct our business with honesty, respect, and transparency, building long-term relationships based on trust.",
   },
   {
-    icon: <FaUsers className="w-8 h-8" />,
+    icon: collaboration,
     title: "Collaboration",
     description:
       "We believe in working as a team with both our clients and our internal teams to deliver the best possible results.",
   },
   {
-    icon: <FaRocket className="w-8 h-8" />,
+    icon: agility,
     title: "Agility",
     description:
       "In a rapidly changing world, we are flexible and adaptable, ensuring that our solutions remain relevant and impactful.",

@@ -67,10 +67,10 @@ const Testimonials = () => {
               />
               <div className="sm:pl-[5rem] sm:pr-[3rem] pt-[3rem] sm:pt-0 flex flex-col gap-3">
                 <p className="text-sm text-wrap">{item.review}</p>
-                <h5 className="text-[1.25rem] sm:text-3xl text-center sm:text-start">
-                  - {item.name}
+                <h5 className="text-[1.25rem]  sm:text-3xl font-candal text-center sm:text-start text-secondary">
+                  {item.name}
                 </h5>
-                <p className="text-sm text-center sm:text-start">
+                <p className="text-sm text-center sm:text-start text-common italic">
                   {item.designation}
                 </p>
               </div>

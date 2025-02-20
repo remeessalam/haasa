@@ -27,9 +27,13 @@ const OurValues = ({ hideWorkProcess }) => {
               className="bg-[#f3e5f5] rounded-lg p-6"
               data-aos="fade-up"
             >
-              <div className="text-purple-600 mb-4">{value.icon}</div>
+              <div className="text-purple-600 mb-4">
+                <img src={value.icon} alt="icon" />
+              </div>
               <h3 className="text-xl font-bold mb-2">{value.title}</h3>
-              <p className="text-gray-700">{value.description}</p>
+              <p className="text-gray-700 font-montserrat">
+                {value.description}
+              </p>
             </div>
           ))}
         </div>

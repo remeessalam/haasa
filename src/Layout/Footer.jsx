@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import logo from "../assets/image/logo/logo.png";
+import logo from "../assets/image/logo/footericon.svg";
 import { clientDetails, routes, updatedServices } from "../Constant";
 import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 
@@ -41,19 +41,24 @@ const Footer = () => {
 
           {/* Services */}
           <div className="w-full md:col-span-2">
-            <h2 className="text-2xl font-bold mb-4">Services</h2>
-            <ul className="grid md:grid-cols-2 space-y-2 gap-4">
+            <h2 className="text-2xl font-bold mb-4 font-candal">Services</h2>
+            <ul className="grid md:grid-cols-2 space-y-2 gap-4 font-montserrat">
               {updatedServices.map((obj) => (
                 <li key={obj.title}>
-                  <Link to={`/service/${obj.path}`}>{obj.title}</Link>
+                  <Link
+                    to={`/service/${obj.path}`}
+                    className="hover:text-hightlighted"
+                  >
+                    {obj.title}
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
 
           {/* Quick Links & Social */}
-          <div>
-            <h2 className="text-2xl font-bold mb-4">Quick Links</h2>
+          <div className="font-montserrat">
+            <h2 className="text-2xl font-bold mb-4 font-candal">Quick Links</h2>
             <ul className="space-y-2 mb-8">
               {routes.map((obj) => (
                 <li key={obj.name}>
@@ -61,9 +66,9 @@ const Footer = () => {
                     to={obj.path}
                     className={`${
                       pathname === `${obj.path}`
-                        ? `text-secondary font-medium`
+                        ? `text-hightlighted font-medium`
                         : `text-gray-100`
-                    }  hover:text-purple-700`}
+                    }  hover:text-hightlighted`}
                   >
                     {obj.name}
                   </Link>
@@ -72,18 +77,32 @@ const Footer = () => {
             </ul>
 
             <div>
-              <h2 className="text-2xl font-bold mb-4">Connect with</h2>
-              <div className="flex space-x-4 text-white">
-                <Link to="#" className="hover:text-gray-300 text-lg">
+              <h2 className="text-2xl font-bold mb-4 font-candal">
+                Connect with
+              </h2>
+              <div className="flex  gap-4 items-center text-white">
+                <Link
+                  to="#"
+                  className="hover:text-gray-300 text-secondary bg-white text-lg pt-[3px]"
+                >
                   <FaFacebookF />
                 </Link>
-                <Link to="#" className="hover:text-gray-300 text-lg">
+                <Link
+                  to="#"
+                  className="hover:text-gray-300  text-secondary bg-white text-lg rounded-sm p-[3px]"
+                >
                   <FaInstagram />
                 </Link>
-                <Link to="#" className="hover:text-gray-300 text-lg">
+                <Link
+                  to="#"
+                  className="hover:text-gray-300  text-white  text-lg"
+                >
                   <FaTwitter />
                 </Link>
-                <Link to="#" className="hover:text-gray-300 text-lg">
+                <Link
+                  to="#"
+                  className="hover:text-gray-300  text-secondary bg-white text-lg rounded-sm p-[3px]"
+                >
                   <FaYoutube />
                 </Link>
               </div>

@@ -33,13 +33,15 @@ const AboutCompany = () => {
             data-aos="fade-up"
           >
             <div className="mb-1 sm:mb-4">
-              <span className="text-2xl sm:text-6xl font-bold">2</span>
+              <span className="text-2xl sm:text-6xl font-bold font-candal">
+                2
+              </span>
               <span className="text-xl sm:text-4xl font-bold">+</span>
             </div>
-            <h3 className="text-xl sm:text-2xl font-medium mb-1 sm:mb-2">
+            <h3 className="text-xl sm:text-2xl mb-1 sm:mb-2 font-candal">
               Years of Experience
             </h3>
-            <p className="text-sm">
+            <p className="text-sm font-montserrat">
               The trusted choice for your software development solutions
             </p>
           </div>

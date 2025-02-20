@@ -7,10 +7,12 @@ module.exports = {
         primary: "#912092",
         secondary: "#3c238e",
         common: "#ff9400",
+        hightlighted: "#C5D82E",
         bannerBackground: "#100f1e",
       },
       fontFamily: {
         montserrat: ['"Montserrat Alternates"', "sans-serif"],
+        candal: ['"Candal"', "sans-serif"],
       },
     },
   },
