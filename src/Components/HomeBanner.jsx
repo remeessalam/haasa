@@ -1,6 +1,7 @@
 import homebannerimage from "../assets/image/homebannerimage.png";
 import homerobotimage from "../assets/image/homerobotimage.png";
 import { Link as Scroll } from "react-scroll";
+import Scroller from "./Scroller";
 
 const HomeBanner = () => {
   return (
@@ -15,7 +16,8 @@ const HomeBanner = () => {
 
         {/* Main Content */}
         <div className="wrapper w-full h-full flex items-center">
-          <div className="max-w-2xl">
+          <Scroller />
+          <div className="max-w-2xl md:ml-[8rem]">
             <div className="space-y-4">
               <p data-aos="fade-right" className="text-gray-300">
                 Welcome to
@@ -28,7 +30,7 @@ const HomeBanner = () => {
               </h1>
               <h2
                 data-aos="fade-right"
-                className="text-2xl text-orange-400 mb-6"
+                className="text-2xl font-bold text-orange-400 mb-6"
               >
                 Shaping the Future of Innovation
               </h2>
@@ -48,7 +50,7 @@ const HomeBanner = () => {
                   to="contactus"
                   className="cursor-pointer"
                 >
-                  JOIN THA INNOVATION
+                  JOIN THE INNOVATION
                 </Scroll>
               </button>
             </div>

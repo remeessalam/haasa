@@ -20,7 +20,7 @@ const HomePage = () => {
       <Services />
       <AboutCompany />
       <OurValues hideWorkProcess={true} />
-      <div className="max-w-screen overflow-hidden">
+      <div id="experience" className="max-w-screen overflow-hidden">
         <section className="w-full grid lg:grid-cols-[60%_35%] items-end relative">
           <img
             loading="lazy"
@@ -28,7 +28,7 @@ const HomePage = () => {
             alt="experience"
             width="800"
             height="600"
-            className="w-full h-[70vh] lg:block hidden object-cover z-10 grayscale-[20%]"
+            className="w-full h-[70vh] lg:block hidden object-cover grayscale-[20%]"
             data-aos="fade-right"
           />
           <div
@@ -52,7 +52,7 @@ const HomePage = () => {
               width="400"
               height="300"
               alt="experience"
-              className="w-full max-w-[21rem] rounded-t-lg block lg:hidden object-cover  object-right z-10"
+              className="w-full max-w-[21rem] rounded-t-lg block lg:hidden object-cover  object-right "
               data-aos="fade-left"
             />
             <div

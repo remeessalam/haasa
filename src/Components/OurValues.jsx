@@ -4,7 +4,7 @@ import { FaChevronRight } from "react-icons/fa";
 
 const OurValues = ({ hideWorkProcess }) => {
   return (
-    <div className="max-w-screen !overflow-hidden">
+    <div id="values" className="max-w-screen !overflow-hidden">
       <div className="wrapper py-16">
         {/* Values Section */}
         <div className="text-center mb-16">

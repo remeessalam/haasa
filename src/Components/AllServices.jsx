@@ -25,7 +25,7 @@ const ServiceSlider = () => {
   // };
 
   return (
-    <div className="w-full py-16 ">
+    <div id="service" className="w-full py-16 ">
       <div className="wrapper">
         <div className="text-center mb-12">
           <h3 className="section-name mb-4" data-aos="fade-up">

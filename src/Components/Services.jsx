@@ -3,7 +3,7 @@ import { industries } from "../Constant";
 import servicebgimg from "../assets/image/servicebgimg.jpeg";
 const Services = () => {
   return (
-    <div className="">
+    <div id="industry" className="">
       {" "}
       <section className="wrapper">
         <div className="text-center mb-12">

@@ -3,7 +3,7 @@ import aboutcompanyimage from "../assets/image/aboutcompanyimage.png";
 const AboutCompany = () => {
   const navigate = useNavigate();
   return (
-    <div className=" bg-white p-8">
+    <div id="about" className=" bg-white p-8">
       {/* Header Section */}
       <div className="text-center mb-12">
         <h2 className="section-name mb-2" data-aos="fade-up">
