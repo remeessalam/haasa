@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@fontsource/montserrat-alternates": "^5.1.1",
+    "@fontsource/roboto": "^5.1.1",
     "aos": "^2.3.4",
     "cra-template": "1.2.0",
     "gsap": "^3.12.7",

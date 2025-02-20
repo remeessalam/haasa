@@ -14,7 +14,7 @@ const LeadForm = () => {
   const navigate = useNavigate();
 
   const onSubmit = async (values) => {
-    const emailBody = `Name: ${values.name}\n\nEmail: ${values.email}\n\nPhone: ${values.phone}\n\nMessage:\n${values.message}`;
+    const emailBody = `Name: ${values.name}\n\nEmail: ${values.email}\n\nPhone: ${values.phone}\n\nSubject: ${values.subject}\n\nMessage:\n${values.message}`;
 
     const payload = {
       to: clientDetails.email,
@@ -133,6 +133,21 @@ const LeadForm = () => {
                 {errors.phone && (
                   <p className="text-red-500 text-sm mt-1">
                     {errors.phone.message}
+                  </p>
+                )}
+              </div>
+
+              <div>
+                <label className="text-white text-sm mb-2 block">Subject</label>
+                <input
+                  type="text"
+                  className="w-full p-3 rounded-md"
+                  placeholder="Enter Subject"
+                  {...register("subject", { required: "Subject is required" })}
+                />
+                {errors.subject && (
+                  <p className="text-red-500 text-sm mt-1">
+                    {errors.subject.message}
                   </p>
                 )}
               </div>

@@ -27,10 +27,13 @@ const Footer = () => {
             <div className="mt-8">
               <h2 className="text-2xl font-bold mb-4">Enquiry</h2>
               <div className="space-y-2">
-                <p className="flex items-center">
+                <Link
+                  to={`mailto:${clientDetails.email}`}
+                  className="flex items-center"
+                >
                   <span className="mr-2">✉</span>
                   {clientDetails.email}
-                </p>
+                </Link>
                 <p className="flex items-center">
                   <span className="mr-2">📞</span>
                   {clientDetails.phone}

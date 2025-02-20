@@ -11,6 +11,8 @@ import OurValues from "../Components/OurValues";
 import Testimonials from "../Components/Testimonials";
 import AssociatedWith from "../Components/Associated";
 import LeadForm from "../Components/LeadForm";
+import recognition from "../assets/svgs/recognition.svg";
+
 const AboutPage = () => {
   return (
     <div>
@@ -61,44 +63,52 @@ const AboutPage = () => {
             alt="experience"
             width="800"
             height="600"
-            className="w-full h-[70vh] lg:block hidden object-cover z-10 grayscale-[20%]"
+            className="w-full h-[65vh] lg:block hidden object-cover grayscale-[20%]"
           />
           <div
             data-aos="fade-left"
-            className="px-6 flex flex-col items-center lg:items-start lg:pl-5 w-full z-10"
+            className="px-6 flex justify-between h-full flex-col items-center lg:items-start lg:pl-5 w-full z-10"
           >
-            <div className="flex items-center gap-3 mb-5">
-              <h6 className="font-extrabold text-xl text-orange-500">
+            <div className="flex flex-col items-start gap-3 mb-5">
+              <h6 className="section-name font-candal" data-aos="fade-left">
                 Work Experience
               </h6>
+              <h2 className="text-[2rem] md:text-5xl font-candal text-[#0C258B] font-extrabold  text-center lg:text-start">
+                We specialize in custom tailoring solutions
+              </h2>
             </div>
-            <h2 className="text-[2rem] md:text-5xl font-extrabold capitalize text-center lg:text-start mb-12">
-              We specialize in custom tailoring solutions
-            </h2>
             <img
               loading="lazy"
               src={workexperienceimage}
               width="400"
               height="300"
               alt="experience"
-              className="w-full max-w-[21rem] rounded-t-lg block lg:hidden object-cover  object-right z-10"
+              className="w-full  rounded-t-lg block lg:hidden object-cover  object-right z-10"
             />
-            <div className="z-10 bg-gradient-to-b from-primary to-violet-900 w-full p-5 grid md:grid-cols-3 gap-5 lg:w-[70vw] lg:-translate-x-[30vw]">
+            <div
+              className="z-10 bg-gradient-to-b from-[#B51D94] to-[#0C258B] w-full px-5 py-14 grid md:grid-cols-3 gap-5 lg:w-[70vw] lg:-translate-x-[30vw]"
+              // data-aos="fade-left"
+            >
               <div className="flex flex-col gap-2 text-white items-start md:border-r-2 border-white/40 p-5">
                 <BsLightningChargeFill className="h-[4rem] w-[4rem] text-orange-400 obj2ct-c -mb-4ontain" />
-                <h2 className="text-4xl font-bold">50+</h2>
-                <p className=" pl-3">Projects Completed</p>
+                <h2 className="text-4xl font-bold font-candal">50+</h2>
+                <p className=" pl-3 font-semibold">Projects Completed</p>
               </div>
               <div className="flex flex-col gap-2 text-white items-start md:border-r-2 border-white/40 p-5 md:pl-10">
                 <MdGroups className="h-[4rem] w-[4rem] text-orange-400 obj2ct-c -mb-4ontain" />
 
-                <h2 className="text-4xl font-bold">100%</h2>
-                <p className=" pl-3">Satisfied clients</p>
+                <h2 className="text-4xl font-bold font-candal">100%</h2>
+                <p className=" pl-3 font-semibold">Satisfied clients</p>
               </div>
               <div className="flex flex-col gap-2 text-white items-start p-5 md:pl-10">
-                <LiaAwardSolid className="h-[4rem] w-[4rem] text-orange-400 obj2ct-c -mb-4ontain" />
-                <h2 className="text-4xl font-bold">2+</h2>
-                <p className=" pl-3">Awards</p>
+                {/* <LiaAwardSolid className="h-[4rem] w-[4rem] text-orange-400 obj2ct-c -mb-4ontain" /> */}
+                <img
+                  src={recognition}
+                  alt=""
+                  className="h-[4rem] w-[4rem] text-orange-400 obj2ct-c -mb-4ontain"
+                />
+                <h2 className="text-4xl font-bold font-candal">02+</h2>
+                <p className=" pl-3 font-semibold">Recognition</p>
               </div>
             </div>
           </div>
@@ -110,7 +120,7 @@ const AboutPage = () => {
         <div className="wrapper text-white py-[4rem] sm:py-[8rem]">
           <h1 className="text-3xl sm:text-7xl font-bold" data-aos="fade-up">
             {" "}
-            who we are
+            WHO WE ARE
           </h1>
           <p className="text-[#ffffff] mt-5" data-aos="fade-up">
             At HAASA AI, we are more than just a service provider – we are your

@@ -8,7 +8,7 @@ const OurValues = ({ hideWorkProcess }) => {
       <div className="wrapper py-16">
         {/* Values Section */}
         <div className="text-center mb-16">
-          <h2 className="section-name mb-2" data-aos="fade-up">
+          <h2 className="section-name  mb-2" data-aos="fade-up">
             What we give
           </h2>
           <h1 className="main-heading mb-4" data-aos="fade-up">
@@ -50,7 +50,7 @@ const OurValues = ({ hideWorkProcess }) => {
               </h1>
             </div>
 
-            <div className="relative">
+            <div className="relative ml-4">
               <div className="flex overflow-x-auto gap-6 no-scrollbar pb-8 -mx-4 px-4 snap-x snap-mandatory">
                 {workProcess.map((process, index) => (
                   <div

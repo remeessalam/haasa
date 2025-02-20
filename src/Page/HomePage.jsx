@@ -21,7 +21,7 @@ const HomePage = () => {
       <AboutCompany />
       <OurValues hideWorkProcess={true} />
       <div id="experience" className="max-w-screen overflow-hidden">
-        <section className="w-full grid lg:grid-cols-[60%_35%] items-end relative">
+        <section className="w-full grid lg:grid-cols-[60%_35%] items-start relative">
           <img
             loading="lazy"
             src={workexperienceimage}
@@ -33,26 +33,26 @@ const HomePage = () => {
           />
           <div
             data-aos="fade-left"
-            className="px-6 flex flex-col items-center lg:items-start lg:pl-5 w-full z-10"
+            className="px-6 flex justify-between h-full flex-col items-center lg:items-start lg:pl-5 w-full z-10"
           >
-            <div className="flex items-center gap-3 mb-5">
+            <div className="flex flex-col items-start gap-3 mb-5">
               <h6 className="section-name font-candal" data-aos="fade-left">
                 Work Experience
               </h6>
+              <h2
+                className="text-[2rem] md:text-5xl font-candal text-[#0C258B] font-extrabold  text-center lg:text-start "
+                data-aos="fade-left"
+              >
+                We specialize in custom tailoring solutions{" "}
+              </h2>
             </div>
-            <h2
-              className="text-[2rem] md:text-5xl font-candal text-[#0C258B] font-extrabold  text-center lg:text-start mb-24"
-              data-aos="fade-left"
-            >
-              We specialize in custom tailoring solutions{" "}
-            </h2>
             <img
               loading="lazy"
               src={workexperienceimage}
               width="400"
               height="300"
               alt="experience"
-              className="w-full max-w-[21rem] rounded-t-lg block lg:hidden object-cover  object-right "
+              className="w-full  rounded-t-lg block lg:hidden object-cover  object-right "
               data-aos="fade-left"
             />
             <div

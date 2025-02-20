@@ -5,12 +5,15 @@ const Intro = () => {
     <div>
       <section className="bg-bannerBackground py-[3rem] sm:py-[7rem] ">
         <div className=" wrapper">
-          <h1 className="main-heading uppercase " data-aos="fade-up">
+          <h1
+            className="main-heading uppercase font-candal !text-white"
+            data-aos="fade-up"
+          >
             Your Partner in Navigating the Digital Transformation Journey
           </h1>
           <div className="grid md:grid-cols-3">
             <p
-              className="text-white/80 mt-5 sm:mt-10 sm:max-w-[60vw] md:col-span-2"
+              className="text-white/80 mt-5 sm:mt-10 sm:max-w-[60vw] md:col-span-2 font-roboto"
               data-aos="fade-up"
             >
               Our vision is to be the trusted partner that businesses turn to
@@ -21,19 +24,15 @@ const Intro = () => {
               world.
             </p>
             <div className="w-full flex md:justify-end md:mt-0 mt-5 sm:mt-10">
-              <button
-                className="primary-btn px-10 py-4 h-fit self-end"
+              <Scroll
+                aria-label="Home"
+                smooth={true}
+                to="contactus"
+                className="cursor-pointer primary-btn px-10 py-4 h-fit self-end"
                 data-aos="fade-left"
               >
-                <Scroll
-                  aria-label="Home"
-                  smooth={true}
-                  to="contactus"
-                  className="cursor-pointer"
-                >
-                  Talk to us
-                </Scroll>
-              </button>
+                Talk to us
+              </Scroll>
             </div>
           </div>
         </div>

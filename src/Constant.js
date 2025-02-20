@@ -266,7 +266,7 @@ export const updatedServices = [
     detailedDescription: `We leverage AI to solve complex business problems, from customer service automation to intelligent product recommendations. Our solutions focus on making processes smarter and more efficient by enabling machines to learn and adapt from data.`,
     services: [
       "Machine Learning: Tailoring custom algorithms that allow systems to improve from experience.",
-      "Natural Language Processing (NLP): Enhancing customer interactions through intelligent chatbots and virtual assistants.",
+      "Natural Language Processing (NLP): Enhancing customer interactions through intelligent chatbot's and virtual assistants.",
       "Predictive Analytics: Forecasting trends and making smarter business decisions with AI-powered insights.",
       "Robotic Process Automation (RPA): Automating repetitive tasks to save time and resources.",
     ],
@@ -333,7 +333,7 @@ export const updatedServices = [
 `,
     services: [
       "User Research & Persona Creation: Understanding your target audience and their behavior to create personas and informed design decisions.",
-      "Wireframing & Prototyping: Visualizing the structure of your product early on to streamline development and gather feedback.",
+      "Wire framing & Prototyping: Visualizing the structure of your product early on to streamline development and gather feedback.",
       "UI Design: Crafting clean, visually appealing interfaces that support seamless interaction.",
       "Usability Testing: Conducting testing with real users to ensure your design is intuitive and user-friendly.",
     ],

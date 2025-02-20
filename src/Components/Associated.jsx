@@ -7,7 +7,7 @@ import logo5 from "../assets/image/brand-logos/5.png";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 
-const logos = [logo1, logo2, logo3, logo4, logo5];
+const logos = [logo1, logo5, logo2, logo3, logo4];
 
 const animation = { duration: 10000, easing: (t) => t };
 

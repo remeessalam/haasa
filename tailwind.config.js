@@ -13,6 +13,7 @@ module.exports = {
       fontFamily: {
         montserrat: ['"Montserrat Alternates"', "sans-serif"],
         candal: ['"Candal"', "sans-serif"],
+        roboto: ['"Roboto"', "sans-serif"],
       },
     },
   },
