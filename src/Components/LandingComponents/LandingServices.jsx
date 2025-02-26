@@ -4,7 +4,7 @@ import { hassaAppServices, hassaWebServices } from "../../Constant";
 const LandingServices = ({ isWeb }) => {
   const services = isWeb ? hassaWebServices : hassaAppServices;
   return (
-    <div id="services" className="container mx-auto px-4 py-12">
+    <div id="services" className="wrapper py-12">
       <h2 className="section-name mb-2 text-center" data-aos="fade-up">
         Services
       </h2>

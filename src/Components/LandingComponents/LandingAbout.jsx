@@ -7,7 +7,7 @@ const LandingAbout = ({ isWeb }) => {
   const navigate = useNavigate();
   const image = isWeb ? webaboutcompanyimage : appaboutcompanyimage;
   return (
-    <div id="aboutus" className="bg-white p-8">
+    <div id="aboutus" className="bg-white wrapper py-8">
       {/* Header Section */}
       <div className="text-center mb-12">
         <h2 className="section-name mb-2" data-aos="fade-up">

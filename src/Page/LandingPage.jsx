@@ -14,6 +14,7 @@ import SinglePortfolio from "../Components/LandingComponents/SinglePortfolio";
 import { appPortfolio, webPortfolio } from "../Constant";
 import LandingAbout from "../Components/LandingComponents/LandingAbout";
 import agilityorange from "../assets/svgs/agilityorange.svg";
+import recognition from "../assets/svgs/recognition.svg";
 
 const LandingPage = ({ page }) => {
   const isWeb = page === "web-development";
@@ -43,13 +44,10 @@ const LandingPage = ({ page }) => {
             className="px-6 flex flex-col h-full justify-between items-center lg:items-start lg:pl-5 w-full z-10"
           >
             <div className="flex flex-col items-start gap-3 mb-5 md:ml-10">
-              <h6 className="section-name" data-aos="fade-left">
+              <h6 className="section-name font-candal" data-aos="fade-left">
                 Work Experience
               </h6>
-              <h2
-                className="text-[2rem] md:text-5xl font-candal text-[#0C258B] font-extrabold  text-center lg:text-start"
-                data-aos="fade-left"
-              >
+              <h2 className="text-[2rem] md:text-5xl font-candal text-[#0C258B] font-extrabold  text-center lg:text-start">
                 We specialize in custom tailoring solutions
               </h2>
             </div>
@@ -70,25 +68,32 @@ const LandingPage = ({ page }) => {
                 <img src={agilityorange} alt="" className="h-[4rem] w-[4rem]" />
 
                 {/* <BsLightningChargeFill className="h-[4rem] w-[4rem] text-orange-400 obj2ct-c -mb-4ontain" /> */}
-                <h2 className="text-4xl font-bold">50+</h2>
-                <p className=" pl-3">Projects Completed</p>
+                <h2 className="text-4xl font-bold font-candal">50+</h2>
+                <p className=" pl-3 font-semibold">Projects Completed</p>
               </div>
               <div className="flex flex-col gap-2 text-white items-start md:border-r-2 border-white/40 p-5 md:pl-10">
                 <MdGroups className="h-[4rem] w-[4rem] text-orange-400 obj2ct-c -mb-4ontain" />
 
-                <h2 className="text-4xl font-bold">100%</h2>
-                <p className=" pl-3">Satisfied clients</p>
+                <h2 className="text-4xl font-bold font-candal">
+                  100<span className="text-3xl">%</span>
+                </h2>
+                <p className=" pl-3 font-semibold">Satisfied clients</p>
               </div>
               <div className="flex flex-col gap-2 text-white items-start p-5 md:pl-10">
-                <LiaAwardSolid className="h-[4rem] w-[4rem] text-orange-400 obj2ct-c -mb-4ontain" />
-                <h2 className="text-4xl font-bold">2+</h2>
-                <p className=" pl-3">Awards</p>
+                {/* <LiaAwardSolid className="h-[4rem] w-[4rem] text-orange-400 obj2ct-c -mb-4ontain" /> */}
+                <img
+                  src={recognition}
+                  alt=""
+                  className="h-[4rem] w-[4rem] text-orange-400 obj2ct-c -mb-4ontain"
+                />
+                <h2 className="text-4xl font-bold">02+</h2>
+                <p className=" pl-3 font-semibold">Awards</p>
               </div>
             </div>
           </div>
         </section>
       </div>
-      <div className=" bg-white paddingtop paddingbottom px-4 sm:px-6 lg:px-8 py-16">
+      <div className="wrapper bg-white paddingtop paddingbottom px-4 sm:px-6 lg:px-8 py-16">
         <div className="max-w-7xl mx-auto">
           <h1
             data-aos="fade-up"
