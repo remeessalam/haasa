@@ -11,6 +11,7 @@ import { useState } from "react";
 import logo from "../assets/image/logo/logo.png";
 import { clientDetails, routes } from "../Constant";
 import { Link as Scroll } from "react-scroll";
+import { FaXTwitter } from "react-icons/fa6";
 
 const LandingHeader = () => {
   const { pathname } = useLocation();
@@ -70,7 +71,8 @@ const LandingHeader = () => {
           <FaInstagram /> {/* Instagram icon */}
         </Link>
         <Link to="#" className="text-secondary  text-xl">
-          <FaTwitter /> {/* Twitter icon */}
+          <FaXTwitter />
+          {/* Twitter icon */}
         </Link>
         <Link
           to={clientDetails.youtube}
@@ -133,7 +135,7 @@ const LandingHeader = () => {
               <FaInstagram />
             </Link>
             <Link to="#" className="text-secondary hover:text-blue-500">
-              <FaTwitter />
+              <FaXTwitter />
             </Link>
             <Link to="#" className="text-secondary hover:text-red-700">
               <FaYoutube />

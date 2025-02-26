@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/image/logo/footericon.svg";
 import { clientDetails, routes, updatedServices } from "../Constant";
 import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   const { pathname } = useLocation();
@@ -100,7 +101,7 @@ const Footer = () => {
                   to="#"
                   className="hover:text-gray-300  text-white  text-lg"
                 >
-                  <FaTwitter />
+                  <FaXTwitter />
                 </Link>
                 <Link
                   to="#"

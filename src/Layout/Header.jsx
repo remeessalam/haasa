@@ -12,6 +12,7 @@ import {
 import { useState } from "react";
 import logo from "../assets/image/logo/logo.png";
 import { clientDetails, routes } from "../Constant";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Header = () => {
   const { pathname } = useLocation();
@@ -64,7 +65,8 @@ const Header = () => {
               <FaInstagram /> {/* Instagram icon */}
             </Link>
             <Link to="#" className="text-secondary  text-xl">
-              <FaTwitter /> {/* Twitter icon */}
+              <FaXTwitter />
+              {/* Twitter icon */}
             </Link>
             <Link
               to={clientDetails.youtube}
@@ -133,7 +135,8 @@ const Header = () => {
                 <FaInstagram /> {/* Instagram icon */}
               </Link>
               <Link to="#" className="text-secondary  text-xl">
-                <FaTwitter /> {/* Twitter icon */}
+                <FaXTwitter />
+                {/* Twitter icon */}
               </Link>
               <Link
                 to={clientDetails.youtube}

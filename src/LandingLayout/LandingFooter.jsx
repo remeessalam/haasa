@@ -3,6 +3,7 @@ import logo from "../assets/image/logo/logo.png";
 import { clientDetails, routes, updatedServices } from "../Constant";
 import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { Link as Scroll } from "react-scroll";
+import { FaXTwitter } from "react-icons/fa6";
 
 const LandingFooter = () => {
   const { pathname } = useLocation();
@@ -95,7 +96,7 @@ const LandingFooter = () => {
                   <FaInstagram />
                 </Link>
                 <Link to="#" className="hover:text-gray-300 text-lg">
-                  <FaTwitter />
+                  <FaXTwitter />
                 </Link>
                 <Link to="#" className="hover:text-gray-300 text-lg">
                   <FaYoutube />
