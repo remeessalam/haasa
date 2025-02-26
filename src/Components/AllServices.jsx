@@ -1,31 +1,57 @@
 import { useNavigate } from "react-router-dom";
 import { updatedServices } from "../Constant";
-import ServiceModal from "./ServiceModal";
+import { useEffect, useRef, useState } from "react";
 // import { useState } from "react";
 
 const ServiceSlider = () => {
   const navigate = useNavigate();
-  // const [selectedService, setSelectedService] = useState(null);
-  // const [isModalOpen, setIsModalOpen] = useState(false);
+  const scrollRef = useRef(null);
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0);
 
   const handleReadMore = (service) => {
     navigate(`/service/${service.path}`);
   };
 
-  // const handleReadMore = (service) => {
-  //   setSelectedService(service);
-  //   setIsModalOpen(true);
-  //   document.body.style.overflow = "hidden"; // Disable background scrolling
-  // };
+  useEffect(() => {
+    const scrollContainer = scrollRef.current;
 
-  // const handleCloseModal = () => {
-  //   setIsModalOpen(false);
-  //   setSelectedService(null);
-  //   document.body.style.overflow = "auto"; // Re-enable background scrolling
-  // };
+    if (scrollContainer) {
+      // Mouse wheel horizontal scroll
+      const handleWheelScroll = (e) => {
+        e.preventDefault();
+        scrollContainer.scrollLeft += e.deltaY; // Converts vertical scroll to horizontal
+      };
+
+      scrollContainer.addEventListener("wheel", handleWheelScroll);
+
+      return () =>
+        scrollContainer.removeEventListener("wheel", handleWheelScroll);
+    }
+  }, []);
+
+  // Mouse drag handlers
+  const handleMouseDown = (e) => {
+    setIsDragging(true);
+    setStartX(e.pageX - scrollRef.current.offsetLeft);
+    setScrollLeft(scrollRef.current.scrollLeft);
+  };
+
+  const handleMouseMove = (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+    const x = e.pageX - scrollRef.current.offsetLeft;
+    const walk = (x - startX) * 1.5; // Increase multiplier for faster scroll
+    scrollRef.current.scrollLeft = scrollLeft - walk;
+  };
+
+  const handleMouseUp = () => {
+    setIsDragging(false);
+  };
 
   return (
-    <div id="service" className="w-full py-16 ">
+    <div id="service" className="w-full py-16 bg-bgcolor">
       <div className="wrapper">
         <div className="text-center mb-12">
           <h3 className="section-name mb-4" data-aos="fade-up">
@@ -41,7 +67,14 @@ const ServiceSlider = () => {
           </p>
         </div>
 
-        <div className="overflow-x-auto no-scrollbar pb-6">
+        <div
+          ref={scrollRef}
+          onMouseDown={handleMouseDown}
+          onMouseMove={handleMouseMove}
+          onMouseLeave={handleMouseUp}
+          onMouseUp={handleMouseUp}
+          className="overflow-x-auto no-scrollbar pb-6"
+        >
           <div className="flex py-5 gap-6 min-w-max ">
             {updatedServices.map((service, index) => (
               <div
@@ -60,7 +93,7 @@ const ServiceSlider = () => {
                   </p>
                   <button
                     onClick={() => handleReadMore(service)}
-                    className={`group-hover:text-[#C5D82E] text-sm font-semibold mt-2 text-start`}
+                    className={`group-hover:text-[#C5D82E] font-montserrat text-sm !font-bold mt-2 text-start`}
                   >
                     READ MORE
                   </button>
@@ -70,9 +103,6 @@ const ServiceSlider = () => {
           </div>
         </div>
       </div>
-      {/* {isModalOpen && (
-        <ServiceModal service={selectedService} onClose={handleCloseModal} />
-      )} */}
     </div>
   );
 };

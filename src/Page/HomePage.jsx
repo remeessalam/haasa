@@ -21,21 +21,21 @@ const HomePage = () => {
       <AboutCompany />
       <OurValues hideWorkProcess={true} />
       <div id="experience" className="max-w-screen overflow-hidden">
-        <section className="w-full grid lg:grid-cols-[60%_35%] items-start relative">
+        <section className="w-full grid lg:grid-cols-[60%_40%] items-start relative">
           <img
             loading="lazy"
             src={workexperienceimage}
             alt="experience"
             width="800"
             height="600"
-            className="w-full h-[65vh] lg:block hidden object-cover grayscale-[20%]"
+            className="w-full  lg:block hidden object-cover grayscale-[20%]"
             data-aos="fade-right"
           />
           <div
             data-aos="fade-left"
             className="px-6 flex justify-between h-full flex-col items-center lg:items-start lg:pl-5 w-full z-10"
           >
-            <div className="flex flex-col items-start gap-3 mb-5">
+            <div className="flex flex-col items-start gap-3 mb-5 md:ml-10">
               <h6 className="section-name font-candal" data-aos="fade-left">
                 Work Experience
               </h6>
@@ -56,7 +56,7 @@ const HomePage = () => {
               data-aos="fade-left"
             />
             <div
-              className="z-10 bg-gradient-to-b from-[#B51D94] to-[#0C258B] w-full px-5 py-14 grid md:grid-cols-3 gap-5 lg:w-[70vw] lg:-translate-x-[30vw]"
+              className="z-10 bg-gradient-to-b from-[#B51D94] to-[#0C258B] w-full px-5 py-10 grid md:grid-cols-3 gap-5 lg:w-[70vw] lg:-translate-x-[30vw]"
               // data-aos="fade-left"
             >
               <div className="flex flex-col gap-2 text-white items-start md:border-r-2 border-white/40 p-5">

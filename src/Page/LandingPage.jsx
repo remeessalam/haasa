@@ -30,31 +30,31 @@ const LandingPage = ({ page }) => {
       {/* <AboutCompany /> */}
       <OurValues hideWorkProcess={true} />
       <div className="max-w-screen overflow-hidden">
-        <section className="w-full grid lg:grid-cols-[60%_35%] items-end relative">
+        <section className="w-full grid lg:grid-cols-[60%_40%] items-end relative">
           <img
             loading="lazy"
             src={workexperienceimage}
             alt="experience"
             width="800"
             height="600"
-            className="w-full h-[70vh] lg:block hidden object-cover z-10 grayscale-[20%]"
+            className="w-full  lg:block hidden object-cover z-10 grayscale-[20%]"
             data-aos="fade-right"
           />
           <div
             data-aos="fade-left"
-            className="px-6 flex flex-col items-center lg:items-start lg:pl-5 w-full z-10"
+            className="px-6 flex flex-col h-full justify-between items-center lg:items-start lg:pl-5 w-full z-10"
           >
-            <div className="flex items-center gap-3 mb-5">
+            <div className="flex flex-col items-start gap-3 mb-5 md:ml-10">
               <h6 className="section-name" data-aos="fade-left">
                 Work Experience
               </h6>
+              <h2
+                className="text-[2rem] md:text-5xl font-candal text-[#0C258B] font-extrabold  text-center lg:text-start"
+                data-aos="fade-left"
+              >
+                We specialize in custom tailoring solutions
+              </h2>
             </div>
-            <h2
-              className="text-[2rem] md:text-5xl font-extrabold capitalize text-center lg:text-start mb-12"
-              data-aos="fade-left"
-            >
-              We specialize in custom tailoring solutions
-            </h2>
             <img
               loading="lazy"
               src={workexperienceimage}

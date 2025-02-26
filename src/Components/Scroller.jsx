@@ -5,7 +5,7 @@ export default function Scroller() {
   const [selected, setSelected] = useState(1);
 
   const sections = [
-    { id: 1, title: "Our Services", path: "service", offset: -70 },
+    { id: 1, title: "Our Services offerings", path: "service", offset: -70 },
     { id: 2, title: "Industry", path: "industry", offset: -100 },
     { id: 3, title: "About Us", path: "about", offset: -70 },
     { id: 4, title: "Our Values", path: "values", offset: -40 },
@@ -44,7 +44,7 @@ export default function Scroller() {
     <div className="hidden lg:flex z-40">
       {/* Navigation */}
       <nav className="fixed left-0 top-0 h-full flex items-center px-4">
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col ">
           {sections.map((section) => (
             <Link
               key={section.id}
@@ -53,11 +53,11 @@ export default function Scroller() {
               smooth={true}
               duration={500}
               offset={section.offset}
-              className="group relative flex items-center cursor-pointer"
+              className="group relative min-h-[72px] flex items-center cursor-pointer"
               onClick={() => setSelected(section.id)}
             >
               <div
-                className={`w-12 h-12 relative rounded-full flex items-center justify-center transition-colors
+                className={`w-10 h-10 relative rounded-full flex items-center justify-center transition-all
                     ${
                       section.id === selected
                         ? "bg-[#ffa726]"
@@ -65,11 +65,11 @@ export default function Scroller() {
                     }`}
               >
                 <div
-                  className={`absolute border-r border-2 transition-all duration-300 ${
+                  className={`absolute border-r border-2 transition-all duration-300 overflow-y-hidden ${
                     section.id === selected
                       ? `border-secondary`
                       : `border-secondary/40`
-                  } h-[5rem] -z-[1]`}
+                  } h-[4.5rem] -z-[1] `}
                 />
                 <span
                   className={`${

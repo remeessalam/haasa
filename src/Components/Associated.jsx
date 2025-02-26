@@ -51,7 +51,7 @@ const AssociatedWith = () => {
     },
   });
   return (
-    <div className="pt-[2rem] w-full flex flex-col items-center relative">
+    <div className="pt-[4rem] w-full flex flex-col items-center relative bg-bgcolor">
       <div className="blurred-blue right-[-10%] bottom-[-10%] -z-10"></div>
       <h2 data-aos="fade-up" className="section-name wrapper">
         Associated With
@@ -60,11 +60,11 @@ const AssociatedWith = () => {
       <h2 className="main-heading py-2" data-aos="fade-up">
         Our Growth Enablers
       </h2>
-      <div ref={sliderRef} className="keen-slider mt-[3rem] ">
+      <div ref={sliderRef} className="keen-slider mt-[3rem] pb-[4rem]">
         {logos.map((img, index) => (
           <div
             key={index}
-            className="keen-slider__slide flex justify-center bg-gray-200 shadow-2xl mb-10 rounded-2xl"
+            className="keen-slider__slide flex justify-center bg-gray-200 shadow-2xl  rounded-2xl"
           >
             <img
               loading="lazy"

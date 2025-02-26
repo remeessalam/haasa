@@ -17,7 +17,7 @@ const HomeBanner = () => {
         {/* Main Content */}
         <div className="wrapper w-full h-full flex items-center">
           <Scroller />
-          <div className="max-w-2xl md:ml-[8rem]">
+          <div className="max-w-2xl ">
             <div className="space-y-4">
               <p data-aos="fade-right" className="text-gray-300">
                 Welcome to
@@ -48,7 +48,7 @@ const HomeBanner = () => {
                   aria-label="Home"
                   smooth={true}
                   to="contactus"
-                  className="cursor-pointer"
+                  className="cursor-pointer font-bold"
                 >
                   JOIN THE INNOVATION
                 </Scroll>

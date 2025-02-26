@@ -24,16 +24,22 @@ const OurValues = ({ hideWorkProcess }) => {
           {values.map((value, index) => (
             <div
               key={index}
-              className="bg-[#f3e5f5] rounded-lg p-6"
+              className="bg-[#f3e5f5] flex justify-center items-center gap-5 rounded-lg p-6"
               data-aos="fade-up"
             >
               <div className="text-purple-600 mb-4">
-                <img src={value.icon} alt="icon" />
+                <img
+                  src={value.icon}
+                  alt="icon"
+                  className="min-w-[69px] min-h-[60px]"
+                />
               </div>
-              <h3 className="text-xl font-bold mb-2">{value.title}</h3>
-              <p className="text-gray-700 font-montserrat">
-                {value.description}
-              </p>
+              <div>
+                <h3 className="text-xl font-bold mb-2">{value.title}</h3>
+                <p className="text-gray-700 font-montserrat">
+                  {value.description}
+                </p>
+              </div>
             </div>
           ))}
         </div>

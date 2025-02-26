@@ -9,6 +9,7 @@ module.exports = {
         common: "#ff9400",
         hightlighted: "#C5D82E",
         bannerBackground: "#100f1e",
+        bgcolor: "#f3f3f3",
       },
       fontFamily: {
         montserrat: ['"Montserrat Alternates"', "sans-serif"],
