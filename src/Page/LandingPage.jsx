@@ -57,7 +57,7 @@ const LandingPage = ({ page }) => {
               width="400"
               height="300"
               alt="experience"
-              className="w-full max-w-[21rem] rounded-t-lg block lg:hidden object-cover  object-right z-10"
+              className="w-full max-w-[25rem] md:max-w-fit rounded-t-lg block lg:hidden object-cover  object-right z-10"
               data-aos="fade-left"
             />
             <div
@@ -118,7 +118,9 @@ const LandingPage = ({ page }) => {
           </div>
         </div>
       </div>
-      <Testimonials />
+      <div className="pb-[4rem]">
+        <Testimonials />
+      </div>
       <AssociatedWith />
       <LeadForm />
     </div>
