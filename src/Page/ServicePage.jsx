@@ -14,7 +14,9 @@ const Servicepage = () => {
       <Intro />
       <ServiceSlider />
       <Services />
-      <Testimonials />
+      <div className="pb-[4rem]">
+        <Testimonials />
+      </div>
       <AssociatedWith />
       <LeadForm />
     </div>
