@@ -9,7 +9,7 @@ import {
 } from "react-icons/fa"; // Import icons from react-icons
 import { useState } from "react";
 import logo from "../assets/image/logo/logo.png";
-import { routes } from "../Constant";
+import { clientDetails, routes } from "../Constant";
 import { Link as Scroll } from "react-scroll";
 
 const LandingHeader = () => {
@@ -57,16 +57,25 @@ const LandingHeader = () => {
 
       {/* Social Media Icons */}
       <div className="hidden md:flex items-center space-x-4">
-        <Link to="#" className="text-secondary hover:text-blue-700">
+        <Link
+          to={clientDetails.facebook}
+          className="text-white  text-xl bg-secondary pt-[3px]"
+        >
           <FaFacebookF /> {/* Facebook icon */}
         </Link>
-        <Link to="#" className="text-secondary hover:text-pink-700">
+        <Link
+          to={clientDetails.instagram}
+          className="text-white  bg-secondary p-[2px] text-xl"
+        >
           <FaInstagram /> {/* Instagram icon */}
         </Link>
-        <Link to="#" className="text-secondary hover:text-blue-500">
+        <Link to="#" className="text-secondary  text-xl">
           <FaTwitter /> {/* Twitter icon */}
         </Link>
-        <Link to="#" className="text-secondary hover:text-red-700">
+        <Link
+          to={clientDetails.youtube}
+          className="text-white bg-secondary text-xl"
+        >
           <FaYoutube /> {/* YouTube icon */}
         </Link>
       </div>

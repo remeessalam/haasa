@@ -58,6 +58,17 @@ import quality from "./assets/svgs/quality.svg";
 import integrity from "./assets/svgs/integrity.svg";
 import collaboration from "./assets/svgs/collaboration.svg";
 import agility from "./assets/svgs/agility.svg";
+//industry image
+import health from "./assets/industries/Healthcare.webp";
+import ecommerce from "./assets/industries/E-commerce&Retail.webp";
+import finance from "./assets/industries/Finance&Banking.webp";
+import energy from "./assets/industries/Energy.webp";
+import realestate from "./assets/industries/RealEstate.webp";
+import manufacturing from "./assets/industries/Manufacturing.webp";
+import logistics from "./assets/industries/Logistics&SupplyChain.webp";
+import education from "./assets/industries/Education.webp";
+import telecom from "./assets/industries/Telecom.webp";
+
 export const routes = [
   { path: "/", name: "HOME" },
   { path: "/about-us", name: "ABOUT US", landingpath: "aboutus" },
@@ -66,58 +77,82 @@ export const routes = [
 export const clientDetails = {
   email: "info@haasa.ai",
   phone: "+91-9866525099",
+  facebook: "https://www.facebook.com/profile.php?id=61573001073512",
+  instagram: "https://www.instagram.com/haasa_software_solutions/?hl=en",
+  whatsapplink:
+    "https://api.whatsapp.com/send/?phone=9866525099&text&type=phone_number&app_absent=0",
+  youtube: "https://www.youtube.com/@HaasaSoftwareSolutions",
+  googlereview: "https://g.page/r/CZuP_53f46elEAI/review",
 };
 export const industries = [
   {
     title: "Healthcare",
+    image: health,
+    id: 1,
     description:
       "Transforming patient care and operations with AI-powered diagnostics, data analytics, and telemedicine solutions.",
     isHighlighted: false,
   },
   {
     title: "E-commerce & Retail",
+    image: ecommerce,
+    id: 2,
     description:
       "Enhancing customer experiences with personalized recommendations, inventory management, and secure online transactions.",
     isHighlighted: true,
   },
   {
     title: "Finance & Banking",
+    image: finance,
+    id: 3,
     description:
       "Streamlining processes with AI, blockchain, and machine learning for fraud detection, risk assessment, and smarter investment strategies.",
     isHighlighted: false,
   },
   {
     title: "Energy",
+    image: energy,
+    id: 4,
     description:
       "Transforming patient care and operations with AI-powered diagnostics, data analytics, and telemedicine solutions.",
     isHighlighted: false,
   },
   {
     title: "Real Estate",
+    image: realestate,
+    id: 5,
     description:
       "Transforming patient care and operations with AI-powered diagnostics, data analytics, and telemedicine solutions.",
     isHighlighted: false,
   },
   {
     title: "Manufacturing",
+    image: manufacturing,
+    id: 6,
     description:
       "Transforming patient care and operations with AI-powered diagnostics, data analytics, and telemedicine solutions.",
     isHighlighted: false,
   },
   {
     title: "Logistics & Supply Chain",
+    image: logistics,
+    id: 7,
     description:
       "Enhancing logistics, inventory, and supply chain management with AI and IoT-enabled tracking and optimization.",
     isHighlighted: false,
   },
   {
     title: "Education",
+    image: education,
+    id: 8,
     description:
       "Personalized learning experiences, predictive analytics for student outcomes, & automated administrative processes using AI and ML.",
     isHighlighted: false,
   },
   {
     title: "Telecom",
+    image: telecom,
+    id: 9,
     description:
       "Boosting network efficiency, customer service, and fraud prevention through AI-driven solutions.",
     isHighlighted: false,

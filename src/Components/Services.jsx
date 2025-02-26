@@ -2,6 +2,7 @@ import React from "react";
 import { industries } from "../Constant";
 import servicebgimg from "../assets/image/servicebgimg.jpeg";
 const Services = () => {
+  console.log(industries, "asdfkmaasdfasdf");
   return (
     <div id="industry" className=" py-[4rem]">
       {" "}
@@ -20,30 +21,34 @@ const Services = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {industries.map((industry, index) => (
-            <div
-              key={index}
-              data-aos="fade-up"
-              className="relative rounded-3xl group p-8  transition-all duration-500 ease-in-out overflow-hidden"
-            >
-              {/* Background Image with Opacity Transition */}
+          {industries.map((industry) => {
+            console.log(industry, "asdfkmaasdfasdf");
+
+            return (
               <div
-                className="absolute top-0 left-0 w-full h-full bg-cover bg-center transition-opacity duration-500 ease-in-out opacity-0 group-hover:opacity-100"
-                style={{ backgroundImage: `url(${servicebgimg})` }}
-              ></div>
+                key={industries.id}
+                data-aos="fade-up"
+                className="relative rounded-3xl group p-8  transition-all duration-500 ease-in-out overflow-hidden"
+              >
+                {/* Background Image with Opacity Transition */}
+                <div
+                  className="absolute top-0 left-0 w-full h-full bg-cover  bg-center transition-opacity duration-500 ease-in-out opacity-0 group-hover:opacity-100"
+                  style={{ backgroundImage: `url(${industry?.image})` }}
+                ></div>
+                <div className="absolute w-full h-full top-0 left-0 bg-transparent group-hover:bg-black/50" />
+                {/* White Overlay */}
+                <div className="absolute top-0 left-0 w-full h-full bg-pink-100  transition-opacity duration-500 ease-in-out group-hover:opacity-0"></div>
 
-              {/* White Overlay */}
-              <div className="absolute top-0 left-0 w-full h-full bg-pink-100 transition-opacity duration-500 ease-in-out group-hover:opacity-0"></div>
-
-              {/* Content */}
-              <div className="relative z-10 group-hover:text-white">
-                <h3 className="text-2xl font-bold mb-4 group-hover:text-white">
-                  {industry.title}
-                </h3>
-                <p className="font-montserrat">{industry.description}</p>
+                {/* Content */}
+                <div className="relative z-10 group-hover:text-white">
+                  <h3 className="text-2xl font-bold mb-4 group-hover:text-white">
+                    {industry.title}
+                  </h3>
+                  <p className="font-montserrat">{industry.description}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </section>
     </div>

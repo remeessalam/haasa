@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 import whatsappIcon from "../assets/svgs/WhatsappIcon.svg";
 import { FaWhatsapp } from "react-icons/fa";
+import { clientDetails } from "../Constant";
 const WhatsApp = () => {
   return (
     <Link
       className="fixed group bottom-[1.5rem] p-3  z-30 border border-white bg-white rounded-full right-[1.5rem] transition-all duration-200"
-      to={``}
+      to={clientDetails.whatsapplink}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Contact us on WhatsApp"
