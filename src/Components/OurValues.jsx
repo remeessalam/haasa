@@ -62,7 +62,7 @@ const OurValues = ({ hideWorkProcess }) => {
                   <div
                     key={index}
                     data-aos="fade-up"
-                    className="flex-none border rounded-xl overflow-hidden w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] snap-start"
+                    className="flex-none border border-[#c9c9c9] rounded-xl overflow-hidden w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] snap-start"
                   >
                     <div className="bg-white rounded-lg px-6 py-10 shadow-lg relative h-full">
                       <div className="text-black mb-4">{process.icon}</div>

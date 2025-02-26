@@ -1,21 +1,19 @@
 import React from "react";
-import HomeBanner from "../Components/HomeBanner";
-import ServiceSlider from "../Components/AllServices";
+
 import Services from "../Components/Services";
 import OurValues from "../Components/OurValues";
 import workexperienceimage from "../assets/image/workexperienceimage.png";
-import { BsLightningChargeFill } from "react-icons/bs";
 import { MdGroups } from "react-icons/md";
 import { LiaAwardSolid } from "react-icons/lia";
 import Testimonials from "../Components/Testimonials";
 import AssociatedWith from "../Components/Associated";
 import LeadForm from "../Components/LeadForm";
-import AboutCompany from "../Components/AboutCompany";
 import LandingBanner from "../Components/LandingComponents/LandingBanner";
 import LandingServices from "../Components/LandingComponents/LandingServices";
 import SinglePortfolio from "../Components/LandingComponents/SinglePortfolio";
 import { appPortfolio, webPortfolio } from "../Constant";
 import LandingAbout from "../Components/LandingComponents/LandingAbout";
+import agilityorange from "../assets/svgs/agilityorange.svg";
 
 const LandingPage = ({ page }) => {
   const isWeb = page === "web-development";
@@ -69,7 +67,9 @@ const LandingPage = ({ page }) => {
               // data-aos="fade-left"
             >
               <div className="flex flex-col gap-2 text-white items-start md:border-r-2 border-white/40 p-5">
-                <BsLightningChargeFill className="h-[4rem] w-[4rem] text-orange-400 obj2ct-c -mb-4ontain" />
+                <img src={agilityorange} alt="" className="h-[4rem] w-[4rem]" />
+
+                {/* <BsLightningChargeFill className="h-[4rem] w-[4rem] text-orange-400 obj2ct-c -mb-4ontain" /> */}
                 <h2 className="text-4xl font-bold">50+</h2>
                 <p className=" pl-3">Projects Completed</p>
               </div>

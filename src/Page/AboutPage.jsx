@@ -3,7 +3,7 @@ import PageBanner from "../Components/PageBanner";
 import bannerImage from "../assets/image/aboutusbanner.png";
 import Intro from "../Components/Intro";
 import aboutusimage from "../assets/image/aboutusimage.png";
-import workexperienceimage from "../assets/image/workexperienceimage.png";
+import workexperienceimage from "../assets/image/workexperienceimage2.png";
 import { BsLightningChargeFill } from "react-icons/bs";
 import { MdGroups } from "react-icons/md";
 import { LiaAwardSolid } from "react-icons/lia";
@@ -12,7 +12,7 @@ import Testimonials from "../Components/Testimonials";
 import AssociatedWith from "../Components/Associated";
 import LeadForm from "../Components/LeadForm";
 import recognition from "../assets/svgs/recognition.svg";
-
+import agilityorange from "../assets/svgs/agilityorange.svg";
 const AboutPage = () => {
   return (
     <div>
@@ -90,14 +90,17 @@ const AboutPage = () => {
               // data-aos="fade-left"
             >
               <div className="flex flex-col gap-2 text-white items-start md:border-r-2 border-white/40 p-5">
-                <BsLightningChargeFill className="h-[4rem] w-[4rem] text-orange-400 obj2ct-c -mb-4ontain" />
+                {/* <BsLightningChargeFill className="h-[4rem] w-[4rem] text-orange-400 object-contain  -mb-4" /> */}
+                <img src={agilityorange} alt="" className="h-[4rem] w-[4rem]" />
                 <h2 className="text-4xl font-bold font-candal">50+</h2>
                 <p className=" pl-3 font-semibold">Projects Completed</p>
               </div>
               <div className="flex flex-col gap-2 text-white items-start md:border-r-2 border-white/40 p-5 md:pl-10">
                 <MdGroups className="h-[4rem] w-[4rem] text-orange-400 obj2ct-c -mb-4ontain" />
 
-                <h2 className="text-4xl font-bold font-candal">100%</h2>
+                <h2 className="text-4xl font-bold font-candal">
+                  100<span className="text-3xl">%</span>{" "}
+                </h2>
                 <p className=" pl-3 font-semibold">Satisfied clients</p>
               </div>
               <div className="flex flex-col gap-2 text-white items-start p-5 md:pl-10">
