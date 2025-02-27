@@ -15,7 +15,7 @@ import recognition from "../assets/svgs/recognition.svg";
 import agilityorange from "../assets/svgs/agilityorange.svg";
 const AboutPage = () => {
   return (
-    <div>
+    <div className="max-w-screen overflow-hidden">
       <PageBanner image={bannerImage} title="About Company" />
       <Intro />
       <div className="max-w-screen overflow-hidden">

@@ -90,7 +90,7 @@ export const industries = [
     image: health,
     id: 1,
     description:
-      "Transforming patient care and operations with AI-powered diagnostics, data analytics, and telemedicine solutions.",
+      "Leveraging AI and data analytics to improve diagnostics, patient care, and operational efficiency in the healthcare industry.",
     isHighlighted: false,
   },
   {
@@ -106,7 +106,7 @@ export const industries = [
     image: finance,
     id: 3,
     description:
-      "Streamlining processes with AI, blockchain, and machine learning for fraud detection, risk assessment, and smarter investment strategies.",
+      "Utilizing AI, blockchain, and machine learning for fraud detection, risk management, and investment optimization.",
     isHighlighted: false,
   },
   {
@@ -114,7 +114,7 @@ export const industries = [
     image: energy,
     id: 4,
     description:
-      "Transforming patient care and operations with AI-powered diagnostics, data analytics, and telemedicine solutions.",
+      "Optimizing energy distribution, predictive maintenance, and sustainability efforts through smart technology solutions.",
     isHighlighted: false,
   },
   {
@@ -122,7 +122,7 @@ export const industries = [
     image: realestate,
     id: 5,
     description:
-      "Transforming patient care and operations with AI-powered diagnostics, data analytics, and telemedicine solutions.",
+      "Leveraging AI-driven insights for property valuation, smart building management, and enhanced customer engagement.",
     isHighlighted: false,
   },
   {
@@ -130,7 +130,7 @@ export const industries = [
     image: manufacturing,
     id: 6,
     description:
-      "Transforming patient care and operations with AI-powered diagnostics, data analytics, and telemedicine solutions.",
+      "Improving efficiency and quality control with AI-powered automation, predictive maintenance, and robotics.",
     isHighlighted: false,
   },
   {
@@ -146,7 +146,7 @@ export const industries = [
     image: education,
     id: 8,
     description:
-      "Personalized learning experiences, predictive analytics for student outcomes, & automated administrative processes using AI and ML.",
+      "Personalizing learning experiences, utilizing predictive analytics for student performance, and automating administrative tasks with AI and ML.",
     isHighlighted: false,
   },
   {
@@ -154,7 +154,7 @@ export const industries = [
     image: telecom,
     id: 9,
     description:
-      "Boosting network efficiency, customer service, and fraud prevention through AI-driven solutions.",
+      "Enhancing network efficiency, customer service, and fraud detection with AI-driven telecom solutions.",
     isHighlighted: false,
   },
 ];
@@ -346,7 +346,7 @@ export const updatedServices = [
     path: "web-development-full-stack",
     icon: <FaGlobe className="text-white text-3xl" />,
     description:
-      "Your website is often the first point of contact for potential customers, and it needs to leave a lasting impression. Our Full-Stack Web Development services cover both front-end and back-end development, ensuring your web applications are functional, secure, and user-friendly.",
+      "We provide full-stack web development, ensuring functional, secure, and user-friendly web applications.",
     detailedDescription: `We provide a comprehensive suite of services, from initial consultation and design to development, testing, and maintenance. Our expert developers work with the latest technologies and frameworks to ensure your website meets your business needs and adapts to future trends.
 `,
     services: [
@@ -363,12 +363,12 @@ export const updatedServices = [
     path: "ui-ux-design",
     icon: <FaPalette className="text-white text-3xl" />,
     description:
-      "User Interface (UI) and User Experience (UX) are critical to delivering digital products that are both functional and enjoyable. Our UI/UX Design Services focus on creating engaging designs that meet the needs of your users while aligning with your brand identity.",
+      "We create intuitive, engaging designs that align with your brand and enhance user experience.",
     detailedDescription: `We take a user-centered approach to design, ensuring your product is not only aesthetically appealing but also intuitive, easy to navigate, and effective in meeting user goals.
 `,
     services: [
       "User Research & Persona Creation: Understanding your target audience and their behavior to create personas and informed design decisions.",
-      "Wire framing & Prototyping: Visualizing the structure of your product early on to streamline development and gather feedback.",
+      "Wireframing & Prototyping: Visualizing the structure of your product early on to streamline development and gather feedback.",
       "UI Design: Crafting clean, visually appealing interfaces that support seamless interaction.",
       "Usability Testing: Conducting testing with real users to ensure your design is intuitive and user-friendly.",
     ],
@@ -380,7 +380,7 @@ export const updatedServices = [
     icon: <FaCloud className="text-white text-3xl" />,
     path: "cloud-computing-services",
     description:
-      "Cloud computing offers flexibility, scalability, and cost-efficiency, and our Cloud Computing Services are designed to help your business leverage these advantages. We assist in migrating your infrastructure to the cloud, ensuring enhanced security, performance, and accessibility.",
+      "We help businesses leverage cloud technology for flexibility, security, and cost efficiency.",
     detailedDescription: `Whether you need infrastructure as a service (IaaS), platform as a service (PaaS), or software as a service (SaaS), we provide end-to-end cloud solutions that allow your business to scale quickly and securely.`,
     services: [
       "Cloud Strategy & Consulting: Helping you choose the right cloud provider and build a tailored strategy.",
@@ -396,7 +396,7 @@ export const updatedServices = [
     path: "internet-of-things-iot-development",
     icon: <FaNetworkWired className="text-white text-3xl" />,
     description:
-      "The Internet of Things (IoT) is rapidly changing the way businesses collect, analyze, and act on data. Our IoT development services help businesses design and implement connected devices that gather data and trigger actions to streamline operations and improve decision-making.",
+      "We build smart IoT solutions that enhance operations through real-time data and automation.",
     detailedDescription: `We help organizations integrate IoT into their processes, creating connected ecosystems that boost efficiency and enable real-time monitoring and control.
 `,
     services: [
@@ -413,7 +413,7 @@ export const updatedServices = [
     path: "machine-learning",
     icon: <FaBrain className="text-white text-3xl" />,
     description:
-      "Machine Learning (ML) is revolutionizing industries by enabling machines to automatically learn from data and improve over time. Our Machine Learning Services help businesses unlock the power of AI to make smarter decisions, automate processes, and improve customer experience.",
+      "We build ML models that help businesses make data-driven decisions and automate processes.",
     detailedDescription: `We build custom ML models that can be tailored to solve your specific business challenges, whether it’s predicting customer behavior, improving sales, or optimizing operations.
 `,
     services: [
@@ -430,7 +430,7 @@ export const updatedServices = [
     path: "ar-and-vr-development",
     icon: <FaVrCardboard className="text-white text-3xl" />,
     description:
-      "Augmented Reality (AR) and Virtual Reality (VR) are transforming the way people interact with digital content. We specialize in creating immersive, interactive AR and VR experiences that engage users in entirely new ways.",
+      "We develop immersive AR and VR experiences for various industries, enhancing engagement.",
     detailedDescription: `Our solutions are designed to work across industries, including entertainment, healthcare, education, and real estate, creating engaging virtual environments and augmented experiences that enhance interaction and learning.
 `,
     services: [
@@ -446,7 +446,7 @@ export const updatedServices = [
     path: "blockchain-development",
     icon: <FaBitcoin className="text-white text-3xl" />,
     description:
-      "Blockchain technology offers unparalleled security, transparency, and traceability. Our Blockchain Development Services help businesses build decentralized applications (dApps) that provide secure, tamper-proof solutions for data exchange, transactions, and smart contracts.",
+      "We develop secure, transparent blockchain solutions for smart contracts, dApps, and more.",
     detailedDescription: `Whether you need a blockchain-based solution for financial services, supply chain, or digital identity management, our team will guide you through the entire process—from strategy and development to deployment.
 `,
     services: [
@@ -462,7 +462,7 @@ export const updatedServices = [
     path: "gaming-application-development",
     icon: <FaGamepad className="text-white text-3xl" />,
     description:
-      "The gaming industry is booming, and we’re here to help you capitalize on it. Our Gaming Application Development services focus on creating engaging, interactive, and high-performance gaming applications for a range of platforms, including mobile, PC, and consoles.",
+      "We create engaging, high-performance games for mobile, PC, and consoles.",
     detailedDescription: `Whether you’re looking to develop an action-packed mobile game or an immersive VR experience, our team will bring your vision to life with cutting-edge technologies.
 `,
     services: [
@@ -478,7 +478,7 @@ export const updatedServices = [
     path: "chatbot-development",
     icon: <FaCommentDots className="text-white text-3xl" />,
     description:
-      "Chatbots are transforming customer interactions, providing instant responses and enhancing user experiences. Our Chatbot Development services focus on building intelligent, conversational bots that are tailored to your business needs.",
+      "We build AI-powered chatbots that enhance customer engagement and automate interactions.",
     detailedDescription: `Whether it’s for customer service, sales, or lead generation, we develop chatbots that provide efficient, 24/7 communication, boosting customer satisfaction and engagement.
 `,
     services: [
@@ -488,20 +488,6 @@ export const updatedServices = [
     ],
     outcome:
       "Our chatbots help improve customer service, reduce costs, and enhance user experience.",
-  },
-  {
-    title: "AI Calling Agency Services",
-    path: "ai-calling-agency-services",
-    icon: <FaPhoneAlt className="text-white text-3xl" />,
-    description:
-      "AI Calling Agency Services use advanced AI technologies to handle high volumes of customer calls, improving efficiency and providing a more personalized experience. Our solutions help businesses automate customer support, sales calls, and service inquiries, ensuring that customer communication is seamless and efficient.",
-    services: [
-      "Automated Call Handling: AI-powered systems capable of managing inbound and outbound calls with natural language processing.",
-      "Personalized Customer Interaction: AI algorithms that can tailor conversations based on user data, improving customer satisfaction.",
-      "Call Analytics: Using AI to analyze call data and gain insights into customer behavior and preferences.",
-    ],
-    outcome:
-      "Our AI calling services help businesses reduce operational costs while improving the quality and responsiveness of customer interactions.",
   },
 ];
 

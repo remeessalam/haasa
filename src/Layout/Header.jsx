@@ -48,6 +48,7 @@ const Header = () => {
             duration={500}
             offset={-70}
             className="group relative flex items-center cursor-pointer"
+            activeClass="active-link"
           >
             CONTACT US
           </Scroller>

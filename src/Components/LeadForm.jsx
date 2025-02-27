@@ -77,17 +77,19 @@ const LeadForm = () => {
           </div>
 
           <div className="mt-8 max-w-md" data-aos="fade-left">
-            <h1 className="text-white text-3xl font-bold mb-8 ">
+            <h1 className="text-white text-3xl font-bold mb-3 ">
               GET IN TOUCH WITH US
             </h1>
-            <p className="text-white mb-8">
+            <p className="text-white mb-3">
               We are always open to discuss your project, improve your online
               presence
             </p>
 
             <form className="space-y-6 z-20 " onSubmit={handleSubmit(onSubmit)}>
               <div>
-                <label className="text-white text-sm mb-2 block">Name</label>
+                <label className="text-[#818181] text-sm mb-2 block">
+                  Name
+                </label>
                 <input
                   type="text"
                   className="w-full p-3 rounded-md"
@@ -102,7 +104,9 @@ const LeadForm = () => {
               </div>
 
               <div>
-                <label className="text-white text-sm mb-2 block">Email</label>
+                <label className="text-[#818181] text-sm mb-2 block">
+                  Email
+                </label>
                 <input
                   type="email"
                   className="w-full p-3 rounded-md"
@@ -123,7 +127,9 @@ const LeadForm = () => {
               </div>
 
               <div>
-                <label className="text-white text-sm mb-2 block">Phone</label>
+                <label className="text-[#818181] text-sm mb-2 block">
+                  Phone
+                </label>
                 <input
                   type="tel"
                   className="w-full p-3 rounded-md"
@@ -138,7 +144,9 @@ const LeadForm = () => {
               </div>
 
               <div>
-                <label className="text-white text-sm mb-2 block">Subject</label>
+                <label className="text-[#818181] text-sm mb-2 block">
+                  Subject
+                </label>
                 <input
                   type="text"
                   className="w-full p-3 rounded-md"
@@ -153,7 +161,9 @@ const LeadForm = () => {
               </div>
 
               <div>
-                <label className="text-white text-sm mb-2 block">Message</label>
+                <label className="text-[#818181] text-sm mb-2 block">
+                  Message
+                </label>
                 <textarea
                   className="w-full p-3 rounded-md h-32"
                   placeholder="Enter Message"

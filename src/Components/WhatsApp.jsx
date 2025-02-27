@@ -5,7 +5,7 @@ import { clientDetails } from "../Constant";
 const WhatsApp = () => {
   return (
     <Link
-      className="fixed group bottom-[1.5rem] p-3  z-30 border border-white bg-white rounded-full right-[1.5rem] transition-all duration-200"
+      className="fixed group bottom-[1.5rem] p-[0.3rem]  z-30 border border-white bg-white rounded-full right-[1.5rem] transition-all duration-200"
       to={clientDetails.whatsapplink}
       target="_blank"
       rel="noopener noreferrer"

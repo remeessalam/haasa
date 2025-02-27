@@ -3,7 +3,8 @@ import logo from "../assets/image/logo/footericon.svg";
 import { clientDetails, routes, updatedServices } from "../Constant";
 import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-
+import phoneicon from "../assets/image/phoneicon.png";
+import messageicon from "../assets/image/sendicon.png";
 const Footer = () => {
   const { pathname } = useLocation();
 
@@ -32,11 +33,13 @@ const Footer = () => {
                   to={`mailto:${clientDetails.email}`}
                   className="flex items-center"
                 >
-                  <span className="mr-2">✉</span>
+                  <img src={messageicon} alt="icon" className="mr-2" />
+                  {/* <span className="mr-2">✉</span> */}
                   {clientDetails.email}
                 </Link>
                 <p className="flex items-center">
-                  <span className="mr-2">📞</span>
+                  {/* <span className="mr-2">📞</span> */}
+                  <img src={phoneicon} alt="icon" className="mr-2" />
                   {clientDetails.phone}
                 </p>
               </div>
@@ -86,26 +89,23 @@ const Footer = () => {
               </h2>
               <div className="flex  gap-4 items-center text-white">
                 <Link
-                  to="#"
-                  className="hover:text-gray-300 text-secondary bg-white text-lg pt-[3px]"
+                  to={clientDetails.facebook}
+                  className=" text-secondary bg-white text-lg pt-[3px]"
                 >
                   <FaFacebookF />
                 </Link>
                 <Link
-                  to="#"
-                  className="hover:text-gray-300  text-secondary bg-white text-lg rounded-sm p-[3px]"
+                  to={clientDetails.instagram}
+                  className="  text-secondary bg-white text-lg rounded-sm p-[3px]"
                 >
                   <FaInstagram />
                 </Link>
-                <Link
-                  to="#"
-                  className="hover:text-gray-300  text-white  text-lg"
-                >
+                <Link to="#" className="  text-white  text-lg">
                   <FaXTwitter />
                 </Link>
                 <Link
-                  to="#"
-                  className="hover:text-gray-300  text-secondary bg-white text-lg rounded-sm p-[3px]"
+                  to={clientDetails.youtube}
+                  className="  text-secondary bg-white text-lg rounded-sm p-[3px]"
                 >
                   <FaYoutube />
                 </Link>

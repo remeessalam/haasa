@@ -37,7 +37,7 @@ const Services = () => {
                 ></div>
                 <div className="absolute w-full h-full top-0 left-0 bg-transparent group-hover:bg-black/50" />
                 {/* White Overlay */}
-                <div className="absolute top-0 left-0 w-full h-full bg-pink-100  transition-opacity duration-500 ease-in-out group-hover:opacity-0"></div>
+                <div className="absolute top-0 left-0 w-full h-full bg-[#F1E8EF]  transition-opacity duration-500 ease-in-out group-hover:opacity-0"></div>
 
                 {/* Content */}
                 <div className="relative z-10 group-hover:text-white">

@@ -51,31 +51,37 @@ const AssociatedWith = () => {
     },
   });
   return (
-    <div className="pt-[4rem] w-full flex flex-col items-center relative bg-bgcolor">
-      <div className="blurred-blue right-[-10%] bottom-[-10%] -z-10"></div>
-      <h2 data-aos="fade-up" className="section-name wrapper">
-        Associated With
-      </h2>
+    <div className="pt-[4rem] w-full max-w-screen overflow-hidden flex flex-col items-center relative bg-bgcolor">
+      <div className=" flex flex-col items-center">
+        {/* <div className="blurred-blue right-[-10%] bottom-[-10%] -z-10"></div> */}
+        <h2 data-aos="fade-up" className="section-name ">
+          Associated With
+        </h2>
 
-      <h2 className="main-heading py-2" data-aos="fade-up">
-        Our Growth Enablers
-      </h2>
-      <div ref={sliderRef} className="keen-slider mt-[3rem] pb-[4rem]">
-        {logos.map((img, index) => (
-          <div
-            key={index}
-            className="keen-slider__slide flex justify-center bg-gray-200 shadow-2xl  rounded-2xl"
-          >
-            <img
-              loading="lazy"
-              src={img}
-              width="200"
-              height="100"
-              alt="featured in"
-              className="h-[7rem] w-[12rem] object-contain"
-            />
-          </div>
-        ))}
+        <h2 className="main-heading py-2" data-aos="fade-up">
+          Our Growth Enablers
+        </h2>
+
+        <div
+          ref={sliderRef}
+          className="keen-slider wrapper mt-[3rem] pb-[4rem]"
+        >
+          {logos.map((img, index) => (
+            <div
+              key={index}
+              className="keen-slider__slide flex justify-center bg-gray-200   rounded-2xl"
+            >
+              <img
+                loading="lazy"
+                src={img}
+                width="200"
+                height="100"
+                alt="featured in"
+                className="h-[7rem] w-[12rem] object-contain"
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
