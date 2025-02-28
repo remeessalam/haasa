@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { values, workProcess } from "../Constant";
 import { FaChevronRight } from "react-icons/fa";
+import { MdDone } from "react-icons/md";
 
 const OurValues = ({ hideWorkProcess }) => {
   const scrollContainerRef = useRef(null);
@@ -106,7 +107,7 @@ const OurValues = ({ hideWorkProcess }) => {
                 <div
                   key={index}
                   data-aos="fade-up"
-                  className="flex-none border shadow-2xl border-[#c9c9c9] rounded-xl w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] snap-start"
+                  className="flex-none select-none border shadow-2xl border-[#c9c9c9] rounded-xl w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] snap-start"
                 >
                   <div className="bg-white rounded-xl pl-6 pr-14 py-10 shadow-lg relative h-full">
                     <div className="text-black mb-4">
@@ -125,7 +126,11 @@ const OurValues = ({ hideWorkProcess }) => {
                       onClick={handleScrollRight}
                     >
                       <div className="h-14 w-14 sm:w-16 sm:h-16 bg-[#642190] rounded-full flex items-center justify-center text-white">
-                        <FaChevronRight className="text-2xl sm:text-4xl" />
+                        {workProcess.length === index + 1 ? (
+                          <MdDone className="text-2xl sm:text-4xl" />
+                        ) : (
+                          <FaChevronRight className="text-2xl sm:text-4xl" />
+                        )}
                       </div>
                     </div>
                   </div>
