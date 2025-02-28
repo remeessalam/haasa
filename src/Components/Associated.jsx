@@ -69,7 +69,7 @@ const AssociatedWith = () => {
           {logos.map((img, index) => (
             <div
               key={index}
-              className="keen-slider__slide flex justify-center bg-gray-200   rounded-2xl"
+              className="keen-slider__slide flex justify-center bg-white px-3   rounded-2xl"
             >
               <img
                 loading="lazy"

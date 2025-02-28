@@ -11,7 +11,7 @@ import LeadForm from "../Components/LeadForm";
 import AboutCompany from "../Components/AboutCompany";
 import recognition from "../assets/svgs/recognition.svg";
 import agilityorange from "../assets/svgs/agilityorange.svg";
-
+import users from "../assets/svgs/users.svg";
 const HomePage = () => {
   return (
     <div className="text-black max-w-screen overflow-x-hidden">
@@ -66,7 +66,8 @@ const HomePage = () => {
                 <p className=" pl-3 font-semibold">Projects Completed</p>
               </div>
               <div className="flex flex-col gap-2 text-white items-start md:border-r-2 border-white/40 p-5 md:pl-10">
-                <MdGroups className="h-[4rem] w-[4rem] text-orange-400 obj2ct-c -mb-4ontain" />
+                {/* <MdGroups className="h-[4rem] w-[4rem] text-orange-400 obj2ct-c -mb-4ontain" /> */}
+                <img src={users} alt="" className="h-[4rem] w-[4rem]" />
 
                 <h2 className="text-4xl font-bold font-candal">100%</h2>
                 <p className=" pl-3 font-semibold">Satisfied clients</p>
