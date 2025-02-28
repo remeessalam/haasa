@@ -66,7 +66,13 @@ const OurValues = ({ hideWorkProcess }) => {
                   className="flex-none border shadow-2xl border-[#c9c9c9] rounded-xl  w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] snap-start"
                 >
                   <div className="bg-white rounded-xl pl-6 pr-14 py-10 shadow-lg relative h-full">
-                    <div className="text-black mb-4">{process.icon}</div>
+                    <div className="text-black mb-4">
+                      {process.image ? (
+                        <img src={process.image} alt="" className="w-12 h-12" />
+                      ) : (
+                        process.icon
+                      )}{" "}
+                    </div>
                     <h3 className="text-xl font-bold mb-2">{process.title}</h3>
                     <p className="text-gray-700">{process.description}</p>
                     {

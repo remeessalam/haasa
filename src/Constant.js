@@ -63,12 +63,15 @@ import health from "./assets/industries/Healthcare.webp";
 import ecommerce from "./assets/industries/E-commerce&Retail.webp";
 import finance from "./assets/industries/Finance&Banking.webp";
 import energy from "./assets/industries/Energy.webp";
-import realestate from "./assets/industries/RealEstate.webp";
+import realestate from "./assets/industries/RealEstate.jpg";
 import manufacturing from "./assets/industries/Manufacturing.webp";
 import logistics from "./assets/industries/Logistics&SupplyChain.webp";
 import education from "./assets/industries/Education.webp";
 import telecom from "./assets/industries/Telecom.webp";
-
+//work process icons
+import discover from "./assets/svgs/discover.png";
+import planning from "./assets/svgs/planning.svg";
+import disign from "./assets/svgs/design.svg";
 export const routes = [
   { path: "/", name: "HOME" },
   { path: "/about-us", name: "ABOUT US", landingpath: "aboutus" },
@@ -238,39 +241,38 @@ export const values = [
 export const workProcess = [
   {
     icon: <FaSearch className="w-8 h-8" />,
+    image: discover,
     title: "Discovery & Consultation",
     description:
       "We start by gaining a deep understanding of your business, challenges, and goals, ensuring we provide the most effective solution.",
   },
   {
     icon: <FaEdit className="w-8 h-8" />,
+    image: planning,
     title: "Planning & Strategy",
     description:
       "After understanding your needs, we develop a detailed strategy, including timelines, budgets, and deliverables.",
   },
   {
     icon: <FaCode className="w-8 h-8" />,
+    image: disign,
     title: "Design & Development",
     description:
       "We get to work on crafting a solution that meets your requirements, with regular feedback loops to ensure alignment with your vision.",
   },
   {
     icon: <FaCog className="w-8 h-8" />,
+    image: discover,
     title: "Testing & Quality Assurance",
     description:
       "Rigorous testing ensures your solution performs flawlessly across all scenarios.",
   },
   {
-    icon: <FaRocket className="w-8 h-8" />,
-    title: "Deployment",
+    icon: <FaCog className="w-12 h-12" />,
+    image: false,
+    title: "Deployment & Support",
     description:
-      "We carefully launch your solution, ensuring a smooth transition and minimal disruption.",
-  },
-  {
-    icon: <FaHandshake className="w-8 h-8" />,
-    title: "Support & Maintenance",
-    description:
-      "Our commitment continues with ongoing support and maintenance to keep your solution running optimally.",
+      "We carefully launch your solution, ensuring a smooth transition with minimal disruption, followed by ongoing support and maintenance to keep it running optimally.",
   },
 ];
 

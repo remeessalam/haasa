@@ -37,13 +37,15 @@ const ServiceSlider = () => {
                   <div className="service-icon">{service.icon}</div>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold">{service.title}</h3>
-                  <p className="font-montserrat text-sm">
+                  <h3 className="text-xl font-bold select-none">
+                    {service.title}
+                  </h3>
+                  <p className="font-montserrat text-sm select-none">
                     {service.description}
                   </p>
                   <button
                     onClick={() => handleReadMore(service)}
-                    className="group-hover:text-[#C5D82E] font-montserrat text-sm !font-bold mt-2 text-start"
+                    className="group-hover:text-[#C5D82E] font-montserrat text-sm !font-bold mt-2 text-start select-none"
                   >
                     READ MORE
                   </button>

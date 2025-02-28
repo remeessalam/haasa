@@ -47,7 +47,7 @@ const Header = () => {
             smooth={true}
             duration={500}
             offset={-70}
-            className="group relative flex items-center cursor-pointer"
+            className="group relative flex items-center cursor-pointer hover:text-purple-700"
             activeClass="active-link"
           >
             CONTACT US
