@@ -18,7 +18,7 @@ const LeadForm = () => {
 
     const payload = {
       to: clientDetails.email,
-      name: "Elixirai",
+      name: "Haasa",
       subject: values.subject,
       body: emailBody,
     };
