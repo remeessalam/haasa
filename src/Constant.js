@@ -81,7 +81,7 @@ export const clientDetails = {
   email: "info@haasa.ai",
   phone: "+91-9866525099",
   facebook: "https://www.facebook.com/profile.php?id=61573001073512",
-  instagram: "https://www.instagram.com/haasa_software_solutions/?hl=en",
+  instagram: "https://www.instagram.com/haasa_ai/",
   whatsapplink:
     "https://api.whatsapp.com/send/?phone=9866525099&text&type=phone_number&app_absent=0",
   youtube: "https://www.youtube.com/@HaasaSoftwareSolutions",
