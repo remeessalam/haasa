@@ -118,6 +118,9 @@ const Footer = () => {
       {/* Copyright */}
       <div className="text-center mt-12 text-sm border-t py-8 border-blue-950">
         <p>Copyright © 2025, All Right Reserved Haasa software solutions</p>
+        <div className="mt-2">
+          <Link to="/privacy-policy" className="text-gray-300 hover:text-white">Privacy Policy</Link>
+        </div>
       </div>
     </footer>
   );

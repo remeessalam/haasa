@@ -9,11 +9,14 @@ import "aos/dist/aos.css";
 import { Toaster } from "react-hot-toast";
 
 import ServiceDetailsPage from "./Page/ServiceDetailsPage";
-import { Suspense } from "react";
+import { Suspense, lazy } from "react";
 import { LoadingSpinner } from "./Components/LoaderSpinner";
 import LandingLayout from "./LandingLayout/LandingLayout";
 import LandingPage from "./Page/LandingPage";
 import Thankyou from "./Components/Thankyou";
+
+// Lazy load the Privacy Policy page
+const PrivacyPolicyPage = lazy(() => import("./Page/PrivacyPolicyPage"));
 function App() {
   AOS.init({
     once: true,
@@ -44,6 +47,7 @@ function App() {
               <Route path="/services" element={<ServicePage />} />
               <Route path="/service/:path" element={<ServiceDetailsPage />} />
               <Route path="/thank-you" element={<Thankyou />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
             </Route>
           </Routes>
           <Routes>
