@@ -70,7 +70,7 @@ const LeadForm = () => {
               data-aos="fade-right"
             >
               Please leave your <br />
-              Quires through a <br />
+              Queries through a <br />
               contact form. Our <br />
               Industry experts will <br /> contact you
             </h2>
@@ -180,7 +180,7 @@ const LeadForm = () => {
                 type="submit"
                 className="!w-full primary-btn py-3 !font-bold"
               >
-                SUBMIT YOUR QUIRES
+                SUBMIT YOUR QUERIES
               </button>
             </form>
           </div>
